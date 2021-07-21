@@ -15,6 +15,6 @@ p::first-letter {
 
 dt { color: rgb(255, 191, 0) }
 
-h2 { color: hsl(210, 100%, 50%) }
+h2 { color: hsl(225, 100%, 50%) }
 
-li.a { color: #ff4000 }
+li a { color: #ff4000 }
