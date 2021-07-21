@@ -1,18 +1,9 @@
-body {
-	background-color: #EEEEEE;
-}
+body { background-color: #EEEEEE; }
 
-.container
-{
-    text-align: center;
-}
+.container { text-align: center; }
 
-.block_left, .block_right
-{
-    display: inline;
-}
+.block_left, .block_right { display: inline; }
 
-a
-{
-	text-decoration: none;
-}
+a { text-decoration: none; }
+
+a:hover { color: #FF00FF; }
