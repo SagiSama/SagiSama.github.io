@@ -4,9 +4,9 @@ body {
 
 .container
 {
-    text-align:center;
+    text-align: center;
 }
-.bloc_left, .bloc_right
+.block_left, .block_right
 {
-    display:inline;
+    display: inline;
 }
