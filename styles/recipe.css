@@ -20,7 +20,7 @@ a {
 	color: #A4A400;
 }
 pre {
-    font-family: monospace;
-    text-align: left;
     white-space: pre-line;
+    float: left;
+    text-align: right;
 }
