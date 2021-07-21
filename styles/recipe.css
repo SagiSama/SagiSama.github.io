@@ -24,3 +24,6 @@ pre {
     float: left;
     text-align: right;
 }
+footer {
+    clear: both;
+}
