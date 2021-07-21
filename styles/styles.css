@@ -13,6 +13,8 @@ p::first-letter {
   	color: #2B2B2B;
 }
 
-dt { color: yellow }
+dt { color: rgb(255, 191, 0) }
 
-h2 { color: blue }
+h2 { color: hsl(180, 100%, 50%) }
+
+li.a { color: #ff4000 }
