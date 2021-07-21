@@ -38,3 +38,6 @@ blockquote {
     font-style: italic;
     background-color: rgb(255, 255, 168);
 }
+.icon_bullet>li {
+    list-style-image: url(../images/recipeImages/pie-icon.gif);
+}
