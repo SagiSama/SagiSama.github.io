@@ -2,6 +2,8 @@ body {
 	color: #404040;
 	font-family: Georgia, Garamond, serif;
 	font-size: 11pt;
+	margin: auto;
+    width: 80%;
 }
 .heading {
 	color: #A4A400;
