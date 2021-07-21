@@ -9,5 +9,6 @@ a { text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 p::first-letter {
-	initial-letter: 1.5em;
+	font-size: 1.5em;
+  	color: #8A2BE2;
 }
