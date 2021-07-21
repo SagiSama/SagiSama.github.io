@@ -3,10 +3,11 @@
 	background-color: #F0F0F0;
 	text-decoration: underline;
 	font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif, serif;
-	font-size: 18pt; 
 }
-
 h1 {
 	text-align: center;
 	font-size: 22pt;
+}
+h2 {
+	font-size: 18pt;
 }
