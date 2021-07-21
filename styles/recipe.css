@@ -1,8 +1,13 @@
+body {
+	color: #404040;
+	font-family: Georgia, Garamond, serif;
+	font-size: 11pt;
+}
 .heading {
 	color: #A4A400;
 	background-color: #F0F0F0;
 	text-decoration: underline;
-	font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif, serif;
+	font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
 }
 h1 {
 	text-align: center;
@@ -10,4 +15,7 @@ h1 {
 }
 h2 {
 	font-size: 18pt;
+}
+a {
+	color: #A4A400;
 }
