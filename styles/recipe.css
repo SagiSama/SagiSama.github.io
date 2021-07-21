@@ -33,3 +33,7 @@ pre {
 footer {
     clear: both;
 }
+blockquote {
+    font-style: italic;
+    background-color: rgb(255, 255, 168);
+}
