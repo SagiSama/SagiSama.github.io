@@ -6,4 +6,4 @@ body { background-color: #EEEEEE; }
 
 a { text-decoration: none; }
 
-a:hover { color: #FF00FF; }
+a:hover { text-decoration: true; }
