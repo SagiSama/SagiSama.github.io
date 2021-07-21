@@ -9,9 +9,5 @@ a { text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 p::first-letter {
-	color: #A52A2A;
-    float: left;
-    font-size: 5em;
-    margin: 0 .1em 0 0;
-    line-height: 0.85;
+	initial-letter: 2;
 }
