@@ -6,4 +6,4 @@ body { background-color: #EEEEEE; }
 
 a { text-decoration: none; }
 
-a:hover { text-decoration: true; }
+a:hover { text-decoration: underline; }
