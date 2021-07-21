@@ -4,6 +4,7 @@ body {
 	font-size: 11pt;
 	margin: auto;
     width: 68%;
+    background-image: url('../images/recipeImages/silverware.jpg');
 }
 .heading {
 	color: #A4A400;
