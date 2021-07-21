@@ -6,7 +6,13 @@ body {
 {
     text-align: center;
 }
+
 .block_left, .block_right
 {
     display: inline;
+}
+
+a
+{
+	text-decoration: none;
 }
