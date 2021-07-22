@@ -98,6 +98,12 @@ ul {
 .quote_box .box {
 	margin-right: 5px;
 }
+#validator {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	opacity: 0.5;
+}
 /* #review_columns {
 	column-count: 2;
   	column-gap: 2%;
