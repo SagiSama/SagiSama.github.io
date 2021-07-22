@@ -71,15 +71,18 @@ ul {
     background-color: #E8DC9B;
     border: 2px solid grey;
     border-radius: 10px;
-    float: left;
-    margin: 5px;
-}
-.review_box>img {
-	float: left;
-	margin: 0 5px 5px 5px;
 }
 .quote_box {
 	font-style: italic;
+}
+.box { 
+   float: left;
+}
+.review_box.box {
+	margin: 5px;
+}
+.quote_box.box {
+	margin-right: 5px;
 }
 /* #review_columns {
 	column-count: 2;
