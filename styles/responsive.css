@@ -2,18 +2,17 @@ body {
 	display: grid;
   	/* grid-template-columns: auto auto auto; */
   	/* grid-gap: 10px; */
-  	border: 1px solid yellow;
 }
 .header {
 	grid-column: 1 / 4;
-	background-color: #5fe1c2;
+	background-color: #97d3f2;
 	height: 5em;
 	text-align: center;
 	justify-content: center;
 }
 .menus {
 	grid-column: 1 / span 3;
-	background-color: #385a3d;
+	background-color: #324539;
 	display: flex;
 	flex-wrap: wrap;
 	min-height: 3em;
@@ -42,7 +41,7 @@ body {
 }
 .footer {
 	grid-column: 1 / span 3;
-	background-color: #385a3d;
+	background-color: #324539;
 	height: 5em;
 	text-align: center;
 	color: white;
