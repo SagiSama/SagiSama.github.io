@@ -71,6 +71,7 @@ ul {
     background-color: #E8DC9B;
     border: 2px solid grey;
     border-radius: 10px;
+    margin: 5px
 }
 .quote_box {
 	font-style: italic;
@@ -79,13 +80,10 @@ ul {
    float: left;
 }
 .review_box .box {
-	margin: 10px;
+	margin: 5px;
 }
 .quote_box .box {
 	margin-right: 5px;
-}
-review_box>p {
-	margin-top: 31px;
 }
 /* #review_columns {
 	column-count: 2;
