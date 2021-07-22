@@ -14,7 +14,36 @@ h1 {
 	text-shadow: 3px 3px #999999;
 }
 .overall_content_area {
+	width: 800px;
+    margin: auto;
 	border: 4px gray solid;
-	min-width: 800px;
 	border-radius: 20px;
+	overflow: hidden;
+	position: relative;
 }
+.column { float: left; }
+#content_left { 
+	width: 550px; 
+}
+#content_right { 
+	width: 250px;
+	background-color: #A2B964;
+}
+.content_header {
+	background-image: url("../images/w1d3review/rbg.png");
+	text-align: left;
+}
+.content_footer {
+	/* width: 100%; */
+	border: 2px solid red;
+}
+/* .column {
+	border: 2px solid black;
+	float: left;
+	width: 32%;
+} */
+/* .columns {
+	column-count: 3;
+	column-gap: 40px;
+	column-rule: none;
+} */
