@@ -56,7 +56,10 @@ ul {
 .content_footer {
 	clear: both;
 	background-color: #A2B964;
-	text-align: left;
+}
+.content_footer>p {
+	margin: 0;
+	padding: 5px;
 }
 #review_columns {
 	display: grid;
