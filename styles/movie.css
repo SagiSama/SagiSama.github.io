@@ -100,7 +100,9 @@ ul {
    float: left;
 }
 .review_box .box {
-	margin: 5px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 5px;
 }
 .quote_box .box {
 	margin-right: 5px;
