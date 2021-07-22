@@ -58,11 +58,17 @@ ul {
 	/* border: 2px solid red; */
 }
 #review_columns {
-    width: 100%
+	display: grid;
+  	grid-template-columns: repeat(2, 1fr);
+  	grid-column-gap: 2%;
+  	column-gap: 2%;
+  	column-width: 47%;
+}
+.review_cols {
+    /* width: 47%;  */
 }
 .column_review { 
 	float: left;
-    width: 47%;
     text-align: left;
 }
 .review_box {
@@ -71,7 +77,7 @@ ul {
     background-color: #E8DC9B;
     border: 2px solid grey;
     border-radius: 10px;
-    margin: 5px
+    margin-top: 5px;
 }
 .quote_box {
 	font-style: italic;
