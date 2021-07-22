@@ -62,3 +62,13 @@ body {
 	display: flex;
 	justify-content: center;
 }
+@media (max-width: 600px) {
+.columns {
+   flex: 100%;
+   max-width: 100%;
+}
+.column {
+ 	min-width: 100%;
+	min-height: 15em;
+}
+}
