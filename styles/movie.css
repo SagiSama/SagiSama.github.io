@@ -44,12 +44,19 @@ h1 {
 	/* width: 100%; */
 	/* border: 2px solid red; */
 }
-.column_review {
-	float: right;
-    width: 47%;
+#review_columns {
+	display: grid;
+  	grid-template-columns: repeat(2, 1fr);
+  	/* grid-column-gap: 2%; */
+  	column-gap: 20%;
 }
-.column_review::after {
-	width: 2%;
+.review_column_left { width: 47% }
+.review_column_right { width: 47% }
+.review_box {
+    font-size: 8pt;
+    background-color: E8DC9B;
+    border: 2px gray;
+    border-radius: 10px;
 }
 /* #review_columns {
 	column-count: 2;
