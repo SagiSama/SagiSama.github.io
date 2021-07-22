@@ -13,20 +13,27 @@ body {
 }
 .menus {
 	grid-column: 1 / span 3;
+	background-color: #385a3d;
 	display: flex;
 	flex-wrap: wrap;
-	background-color: #385a3d;
-	height: 3em;
+	min-height: 3em;
 }
 .menu {
 	color: white;
 	border-right: 1px solid black;
+  	padding: 0 20px 30px 20px;
+  	text-decoration: none;
+  	text-align: center;
+}
+.menus a:hover {
+  background-color: #ddd;
+  color: black;
 }
 .columns {
 	grid-column: 1/4;
 	display: flex;
 	flex-wrap: wrap;
-	height: 15em;
+	min-height: 15em;
 }
 .column {
   /* flex: 33%; */
@@ -39,6 +46,8 @@ body {
 	height: 5em;
 	text-align: center;
 	color: white;
+	display: flex;
+	justify-content: center;
 }
 #col_one { 
 	flex: 30%;
