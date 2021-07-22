@@ -38,6 +38,9 @@ body {
 	min-width: 200px;
 	min-height: 15em;
 }
+.column p {
+	padding-left: 20px;
+}
 #col_one { 
 	flex: 30%;
 	background-color: grey;
