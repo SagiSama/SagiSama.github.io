@@ -30,6 +30,8 @@ h1 {
 	background-color: #A2B964;
 }
 .content_header {
+	display: flex;
+	align-items: center;
 	background-image: url("../images/w1d3review/rbg.png");
 	text-align: left;	
 }
@@ -40,21 +42,21 @@ h1 {
 }
 .content_footer {
 	/* width: 100%; */
-	border: 2px solid red;
+	/* border: 2px solid red; */
 }
-/* .column {
-	border: 2px solid black;
-	float: left;
-	width: 32%;
-} */
-#review_columns {
-	/* column-count: 2; */
+.column_review {
+	float: right;
+    width: 47%;
+}
+.column_review::after {
+	width: 2%;
+}
+/* #review_columns {
+	column-count: 2;
   	column-gap: 2%;
-  	/* column-rule: none; */
-  	
-  	/* column-width: 40vw; */
+  	column-rule: none;
+  	column-width: 40vw;
   	column-fill: 100%;
-  	/* columns: 47%vw; */
+  	columns: 47%vw;
 	column-width: 37vw;
-	
-}
+} */
