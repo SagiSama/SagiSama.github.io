@@ -47,8 +47,14 @@ h1 {
 	float: left;
 	width: 32%;
 } */
-/* .columns {
-	column-count: 3;
-	column-gap: 40px;
-	column-rule: none;
-} */
+#review_columns {
+	/* column-count: 2; */
+  	column-gap: 2%;
+  	/* column-rule: none; */
+  	
+  	/* column-width: 40vw; */
+  	column-fill: 100%;
+  	/* columns: 47%vw; */
+	column-width: 37vw;
+	
+}
