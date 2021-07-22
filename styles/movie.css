@@ -78,11 +78,14 @@ ul {
 .box { 
    float: left;
 }
-.review_box.box {
-	margin: 5px;
+.review_box .box {
+	margin: 10px;
 }
-.quote_box.box {
+.quote_box .box {
 	margin-right: 5px;
+}
+review_box>p {
+	margin-top: 31px;
 }
 /* #review_columns {
 	column-count: 2;
