@@ -82,6 +82,9 @@ ul {
     text-align: left;
     margin-bottom: 20pt;
 }
+.review_box>p {
+	padding-left: 10px;
+}
 .review_box {
     font-size: 8pt;
     font-weight: bold;
