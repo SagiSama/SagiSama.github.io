@@ -81,6 +81,8 @@ ul {
 	float: left;
     text-align: left;
     margin-bottom: 20pt;
+    display: flex;
+    flex-direction: column;
 }
 .review_box>p {
 	padding-left: 5px;
@@ -96,6 +98,7 @@ ul {
 }
 .quote_box {
 	font-style: italic;
+	padding-top: 10px;
 }
 .box { 
    float: left;
