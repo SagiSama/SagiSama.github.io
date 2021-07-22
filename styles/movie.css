@@ -72,6 +72,7 @@ ul {
 .column_review { 
 	float: left;
     text-align: left;
+    margin-bottom: 20pt;
 }
 .review_box {
     font-size: 8pt;
