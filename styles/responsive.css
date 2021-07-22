@@ -64,8 +64,8 @@ body {
 }
 @media (max-width: 600px) {
 .columns {
-   flex: 100%;
-   max-width: 100%;
+	display: flex;
+  	flex-wrap: wrap;
 }
 .column {
  	min-width: 100%;
