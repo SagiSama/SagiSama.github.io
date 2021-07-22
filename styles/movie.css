@@ -62,7 +62,9 @@ ul {
   	grid-template-columns: repeat(2, 1fr);
   	grid-column-gap: 2%;
   	column-gap: 2%;
-  	column-width: 47%;
+  	column-width: 47vw;
+	margin-left: 5px;
+    margin-right: 5px;
 }
 .review_cols {
     /* width: 47%;  */
