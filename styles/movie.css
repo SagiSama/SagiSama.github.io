@@ -23,7 +23,7 @@ h1 {
 }
 .column { float: left; }
 #content_left { 
-	width: 550px; 
+	width: 550px;
 }
 #content_right { 
 	width: 250px;
@@ -31,7 +31,12 @@ h1 {
 }
 .content_header {
 	background-image: url("../images/w1d3review/rbg.png");
-	text-align: left;
+	text-align: left;	
+}
+.content_header>span {
+	font-size: 48pt;
+	font-weight: bold;
+	color: red;
 }
 .content_footer {
 	/* width: 100%; */
