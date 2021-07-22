@@ -28,6 +28,19 @@ h1 {
 #content_right { 
 	width: 250px;
 	background-color: #A2B964;
+	text-align: left;
+	font-size: 8pt;
+	font-family: Arial, sans-serif;
+}
+dt {
+	font-weight: bold;
+	margin-top: 10pt;
+}
+ul { 
+  list-style-type: none;
+}
+#content_right>dl {
+	margin: 10px;
 }
 .content_header {
 	display: flex;
@@ -55,6 +68,7 @@ h1 {
 .review_box {
 	float: left; 
     font-size: 8pt;
+    font-weight: bold;
     background-color: #E8DC9B;
     border: 2px solid grey;
     border-radius: 10px;
@@ -64,6 +78,9 @@ h1 {
 .review_box>img {
 	float: left;
 	margin: 0 5px 5px 5px;
+}
+.quote_box {
+	font-style: italic;
 }
 /* #review_columns {
 	column-count: 2;
