@@ -10,20 +10,26 @@
 	<link rel="stylesheet" href="../styles/responsive_bootstrap.css">
 	<title>Responsive layout</title>
 </head>
-<body class="row">
-	<div class="col-12 header text-center py-3">
-		<h2>Header</h2>
+<body class="container-fluid">
+	<div class="row">
+		<div class="col-lg-12 header text-center py-3">
+			<h2>Header</h2>
+		</div>
+		<div class="col-lg-12 menus">
+			<div class="row">
+				<a href="#" class="col-sm-1 menu text-center py-3 text-white">Menu1</a>
+				<a href="#" class="col-sm-1 menu text-center py-3 text-white">Menu2</a>
+				<a href="#" class="col-sm-1 menu text-center py-3 text-white">Menu3</a>
+			</div>
+		</div>
+		<div class="col-lg-12 columns">
+			<div class="row">
+				<div class="col-md-3 column" id="col_one"><p>Column1</p></div>
+				<div class="col-md-6 column" id="col_two"><p>Column2</p></div>
+				<div class="col-md-3 column" id="col_tree"><p>Column3</p></div>
+			</div>
+		</div>
+		<div class="col-12 footer text-center py-3 text-white"><p>Footer</p></div>
 	</div>
-	<div class="col-12 row menus">
-		<a href="#" class="col-sm-1 menu text-center py-3 text-white">Menu1</a>
-		<a href="#" class="col-sm-1 menu text-center py-3 text-white">Menu2</a>
-		<a href="#" class="col-sm-1 menu text-center py-3 text-white">Menu3</a>
-	</div>
-	<div class="col-12 row columns">
-		<div class="col-3 column" id="col_one"><p>Column1</p></div>
-		<div class="col-6 column" id="col_two"><p>Column2</p></div>
-		<div class="col-3 column" id="col_tree"><p>Column3</p></div>
-	</div>
-	<div class="col-12 footer text-center py-3 text-white"><p>Footer</p></div>
 </body>
 </html>
