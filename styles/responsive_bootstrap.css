@@ -1,0 +1,36 @@
+.header {
+	background-color: #97d3f2;
+	height: 5em;
+}
+.menus {
+	background-color: #324539;
+	min-height: 3em;
+}
+.menu {
+    text-decoration: none;
+    border-right: 2px solid black;
+}
+.menu:hover {
+  background-color: #ddd;
+  color: black;
+}
+.columns {
+  	min-height: 15em;
+}
+.column {
+	min-width: 200px;
+	min-height: 15em;
+}
+#col_one { 
+	background-color: grey;
+}
+#col_two {
+	background-color: silver;
+}
+#col_tree { 
+	background-color: #D3D3D3;
+}
+.footer {
+	background-color: #324539;
+	height: 5em;
+}
