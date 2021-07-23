@@ -9,7 +9,7 @@ function max(num1, num2) {
 
 // Task 2
 function maxOfThree(n1, n2, n3) {
-	return max(max(a, b), c);
+	return max(max(n1, n2), n3);
 }
 
 // Task test
