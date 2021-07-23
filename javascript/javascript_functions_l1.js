@@ -6,3 +6,5 @@ function max(num1, num2) {
 		return num2;
 	}
 }
+
+console.log("test of one ---->"+max(1,2));
