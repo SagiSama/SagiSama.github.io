@@ -98,6 +98,14 @@ const d3 = a.findIndex(function(elem) {return elem > 1;}); //1
 
 // Task test
 function test(expected, result) {
+	if(Array.isArray(expected) && Array.isArray(result)) {
+		if(JSON.stringify(expected) === JSON.stringify(result)) {
+			return "TEST SUCCEEDED";
+		} else {
+			return "TEST FAILED.  Expected " + expected + " found " + result;
+		}
+	}
+	
 	if(expected === result) {
 		return "TEST SUCCEEDED";
 	} else {
