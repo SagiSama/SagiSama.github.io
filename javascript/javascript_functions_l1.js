@@ -61,7 +61,7 @@ let findLongestWord = function(strArr) {
 
 // Task 7
 const filterLongWords = function(strArr, len) {
-	let i=0, res;
+	let i=0, res=[];
 	while(i<strArr.length) {
 		if(len<strArr[i].length) {
 			res.push(strArr[i]);
