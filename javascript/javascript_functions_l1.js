@@ -38,8 +38,8 @@ const multiply = function multiply1(arr) {
 
 // Task 5
 const reverse = function reverse(word) {
-	const reserved = "";
-	const i=word.length-1;
+	let reserved = "";
+	let i=word.length-1;
 	while(i>-1) {
 		reserved += word[i];
 		i--;
