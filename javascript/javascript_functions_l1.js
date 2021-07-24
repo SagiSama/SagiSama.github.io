@@ -78,21 +78,21 @@ const b = a.map(function(elem, i, array) {
   return elem * 10;
 })
 // b
-document.writeln(b.toString() + "<br/>");
+//document.writeln(b.toString() + "<br/>");
 const c = a.filter(function(elem, i, array){
   return elem === 3;});
-document.writeln(c.toString() + "<br/>");
+//document.writeln(c.toString() + "<br/>");
 // c
 const d = a.reduce(function(prevValue, elem, i, array){
   return prevValue + elem;
 });
 
-document.writeln(d+ "<br/>");
+//document.writeln(d+ "<br/>");
 
 const d2 = a.find(function(elem) {return elem > 1;}); //3
 const d3 = a.findIndex(function(elem) {return elem > 1;}); //1
-document.writeln(d2+ "<br/>");
-document.writeln(d3);
+//document.writeln(d2+ "<br/>");
+//document.writeln(d3);
 
 
 
@@ -113,7 +113,7 @@ console.log("Task 4 -> Expected output of multiply([1,2,3,4,5,6,7,8,9]) is 36288
 console.log("Task 5 -> Expected output of reverse('abc') is 'cba' " + test("cba", reverse("abc")));
 console.log("Task 6 -> Expected output of findLongestWord(['123abc?.','a','abc']) is 8 " + test(8, findLongestWord(['123abc?.','a','abc'])));
 console.log("Task 7 -> Expected output of filterLongWords(['second','one','third'], 4) is ['second','third'] " + test(['second','third'], filterLongWords(['second','one','third'], 4)));
-console.log("Task 8a -> Expected output of b() is [10,30,50,30,30] " + test([10,30,50,30,30], b()));
-console.log("Task 8b -> Expected output of c() is [3,3,3] " + test([3,3,3], c()));
-console.log("Task 8c -> Expected output of d() is 15 " + test(15, d()));
+console.log("Task 8a -> Expected output of b() is [10,30,50,30,30] " + test([10,30,50,30,30], b));
+console.log("Task 8b -> Expected output of c() is [3,3,3] " + test([3,3,3], c));
+console.log("Task 8c -> Expected output of d() is 15 " + test(15, d));
 
