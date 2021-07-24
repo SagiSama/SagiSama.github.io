@@ -85,7 +85,7 @@ console.log("Task 2 -> Expected output of maxOfThree(1, -2, 0) is 1 " + test(1, 
 console.log("Task 3 -> Expected output of isVowel('a') is true " + test(true, isVowel("a")));
 console.log("Task 4 -> Expected output of sum([1,2,3,4,5,6,7,8,9]) is 45 " + test(45, sum([1,2,3,4,5,6,7,8,9])));
 console.log("Task 4 -> Expected output of multiply([1,2,3,4,5,6,7,8,9]) is 362880 " + test(362880, multiply([1,2,3,4,5,6,7,8,9])));
-console.log("Task 5 -> Expected output of reverse('abc') is abc " + test("bca", reverse("abc")));
+console.log("Task 5 -> Expected output of reverse('abc') is 'cba' " + test("cba", reverse("abc")));
 console.log("Task 6 -> Expected output of findLongestWord(['123abc?.','a','abc']) is 8 " + findLongestWord(8, reverse(['123abc?.','a','abc'])));
 console.log("Task 7 -> Expected output of filterLongWords(['second','one','third'], 4) is ['second','third'] " + test(['second','one','third'], filterLongWords(['second','one','third'], 4)));
 
