@@ -52,7 +52,7 @@ let findLongestWord = function(strArr) {
 	let len=0, i=0;
 	while(i<strArr.length) {
 		if(len<strArr[i].length) {
-			len = strArr[i];
+			len = strArr[i].length;
 		}
 		i++;
 	}
@@ -112,7 +112,7 @@ console.log("Task 4 -> Expected output of sum([1,2,3,4,5,6,7,8,9]) is 45 " + tes
 console.log("Task 4 -> Expected output of multiply([1,2,3,4,5,6,7,8,9]) is 362880 " + test(362880, multiply([1,2,3,4,5,6,7,8,9])));
 console.log("Task 5 -> Expected output of reverse('abc') is 'cba' " + test("cba", reverse("abc")));
 console.log("Task 6 -> Expected output of findLongestWord(['123abc?.','a','abc']) is 8 " + test(8, findLongestWord(['123abc?.','a','abc'])));
-console.log("Task 7 -> Expected output of filterLongWords(['second','one','third'], 4) is ['second','third'] " + test(['second','one','third'], filterLongWords(['second','one','third'], 4)));
+console.log("Task 7 -> Expected output of filterLongWords(['second','one','third'], 4) is ['second','third'] " + test(['second','third'], filterLongWords(['second','one','third'], 4)));
 console.log("Task 8a -> Expected output of b() is [10,30,50,30,30] " + test([10,30,50,30,30], b()));
 console.log("Task 8b -> Expected output of c() is [3,3,3] " + test([3,3,3], c()));
 console.log("Task 8c -> Expected output of d() is 15 " + test(15, d()));
