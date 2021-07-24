@@ -124,4 +124,5 @@ console.log("Task 7 -> Expected output of filterLongWords(['second','one','third
 console.log("Task 8a -> Expected output of b() is [10,30,50,30,30] " + test([10,30,50,30,30], b));
 console.log("Task 8b -> Expected output of c() is [3,3,3] " + test([3,3,3], c));
 console.log("Task 8c -> Expected output of d() is 15 " + test(15, d));
+console.log("Task 8c -> Fail condition check Expected output of d() is 15 but check 14 " + test(14, d));
 
