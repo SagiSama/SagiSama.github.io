@@ -18,7 +18,7 @@ const isVowel = function(vovel) {
 	return charString.indexOf(vovel) > -1;
 };
 
-// Task4
+// Task 4
 const sum = function sum(arr) {
     let sum=0;
 	for(let i=0; i<arr.length; i++) {
@@ -36,7 +36,7 @@ const multiply = function multiply1(arr) {
 	return total;
 };
 
-//Task 5
+// Task 5
 const reverse = function reverse(word) {
 	const reserved = "";
 	const i=word.length-1;
@@ -46,6 +46,18 @@ const reverse = function reverse(word) {
 	}
 	return reserved;
 }
+
+// Task 6
+let findLongestWord = function(strArr) {
+	let len=0, i=0;
+	while(i<strArr.length) {
+		if(len<strArr[i].length) {
+			len = strArr[i];
+		}
+		i++;
+	}
+	return len;
+};
 
 // Task test
 function test(expected, result) {
@@ -62,3 +74,7 @@ console.log("Task 3 -> Expected output of isVowel('a') is true " + test(true, is
 console.log("Task 4 -> Expected output of sum([1,2,3,4,5,6,7,8,9]) is 45 " + test(45, sum([1,2,3,4,5,6,7,8,9])));
 console.log("Task 4 -> Expected output of multiply([1,2,3,4,5,6,7,8,9]) is 362880 " + test(362880, multiply([1,2,3,4,5,6,7,8,9])));
 console.log("Task 5 -> Expected output of reverse('abc') is abc " + test("bca", reverse("abc")));
+console.log("Task 6 -> Expected output of findLongestWord(['123abc?.','a','abc']) is 8 " + findLongestWord(8, reverse(['123abc?.','a','abc'])));
+
+
+
