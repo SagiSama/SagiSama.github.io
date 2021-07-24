@@ -27,7 +27,7 @@ const sum = function sum(arr) {
 	return sum;
 };
 
-const multiply = multiply1(arr) {
+const multiply = function multiply1(arr) {
 	let total=0, i=0;
 	while(i<arr.length) {
 		total += arr[i];
