@@ -37,7 +37,14 @@ const multiply = function multiply1(arr) {
 };
 
 //Task 5
-const reverse = function reverse() {
+const reverse = function reverse(word) {
+	const reserved = "";
+	const i=word.length-1;
+	while(i>-1) {
+		reserved += word[i];
+		i--;
+	}
+	return reserved;
 }
 
 // Task test
@@ -54,3 +61,4 @@ console.log("Task 2 -> Expected output of maxOfThree(1, -2, 0) is 1 " + test(1, 
 console.log("Task 3 -> Expected output of isVowel('a') is true " + test(true, isVowel("a")));
 console.log("Task 4 -> Expected output of sum([1,2,3,4,5,6,7,8,9]) is 45 " + test(45, sum([1,2,3,4,5,6,7,8,9])));
 console.log("Task 4 -> Expected output of multiply([1,2,3,4,5,6,7,8,9]) is 362880 " + test(362880, multiply([1,2,3,4,5,6,7,8,9])));
+console.log("Task 5 -> Expected output of reverse('abc') is abc " + test("bca", reverse("abc")));
