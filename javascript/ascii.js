@@ -4,8 +4,8 @@ window.onload = function(){
 	
 	let buttonStart = document.getElementById("start");
 	buttonStart.onevent = start;
-}
 
-function start() {
-	alert("hi");
-}
+	function start() {
+		alert("hi");
+	}
+};
