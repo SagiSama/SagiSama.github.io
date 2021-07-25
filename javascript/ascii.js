@@ -1,9 +1,7 @@
-window.onload = function(){
-    "use strict";
-    // put all of your code here
+window.onload = function() {
 	
 	var buttonStart = document.getElementById("start");
-	buttonStart.onevent = start;
+	buttonStart.onclick = start;
 
 	function start() {
 		alert("hi");
