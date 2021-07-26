@@ -36,6 +36,7 @@ window.onload = function() {
 		stop.disabled = true;
 		start.disabled = false;
 		runStatus = false;
+		animation.disabled = false;
 	} 
 	
 	function display() {
