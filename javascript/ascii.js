@@ -2,42 +2,44 @@ window.onload = function() {
 	
 	var textarea = document.getElementById("text-area");
 	var start = document.getElementById("start");
-	start.onclick = start;
+	start.onclick = animate;
 	var animation = document.getElementById("animation");
-	animation.onchange = displayAnimation;
+	animation.onchange = setAnime;
 	var turbo = document.getElementById("turbo");
-	turbo.onchange = turbo;
+	turbo.onchange = setTurbo;
 	
-	let timer = null;
-	let i = 0;
 	let interval = 250;
-	function start() {
+	let i = 0;
+	let timer = null;
+	function animate() {
  		if (timer === null) {
- 			timer = setInterval(animate, interval);
+ 			timer = setInterval(display, interval);
 		} else {
 			clearInterval(timer);
  			timer = null;
 		}
 	} 
 	
-	function animate() {
-		mainTextArea.innerHTML = animationTypeArray[i]; 
-		(i+1==animationTypeArray.length) ? i=0 : i++;
+	function display() {
+		textarea.innerHTML = animeTypeArray[i]; 
+		(i+1==animeTypeArray.length) ? i=0 : i++;
 	}
 	
-	let animationType = null;
-	let animationTypeArray = [];
-	function displayAnimation() {
-		animationType = ANIMATIONS[selectAnimation.value];
-		animationTypeArray = animationType.split("=====\n");
-		mainTextArea.innerText = animationType;
+	let animeType = null;
+	let animeTypeArray = [];
+	function setAnime() {
+		animeType = ANIMATIONS[animation.value];
+		animeTypeArray = animeType.split("=====\n");
+		textarea.innerText = animeType;
 	}
 	
-	const turbo = function turbulance() {
+	function setTurbo() {
 		if(turbo.checked) {
-			interval = 50;
+			interval=50;
 		} else {
-			interval = 250;
+			interval=250;
 		}
-	};
+		clearInterval(timer);
+		timer = setInterval(display, interval);
+	}
 };
