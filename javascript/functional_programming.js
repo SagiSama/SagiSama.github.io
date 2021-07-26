@@ -21,8 +21,7 @@ const isVowel = function(vovel) {
 // Task 4
 const sum = function sum(arr) {
     let sum=0;
-	arr.forEach(function(element) {
-		element = element + "ha ha ha";
+	arr.forEach(function() {
 	 	sum += arr[i];
 	});
 	return sum;
