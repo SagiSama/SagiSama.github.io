@@ -48,6 +48,7 @@ window.onload = function() {
 		}
 	}
 	
+	ANIMATIONS;
 	let animeType = null;
 	let animeTypeArray = [];
 	function setAnime() {
