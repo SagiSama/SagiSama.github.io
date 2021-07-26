@@ -6,8 +6,11 @@ window.onload = function() {
 	start.onclick = animate;
 	var animation = document.getElementById("animation");
 	animation.onchange = setAnime;
+	var size = document.getElementById("fontsize");
+	size.onchange = setSize;
 	var turbo = document.getElementById("turbo");
 	turbo.onchange = setTurbo;
+	
 	
 	let interval = 250;
 	let i = 0;
@@ -32,6 +35,10 @@ window.onload = function() {
 		animeType = ANIMATIONS[animation.value];
 		animeTypeArray = animeType.split("=====\n");
 		textarea.innerText = animeType;
+	}
+	
+	function setSize() {
+		textarea.className = size.value;
 	}
 	
 	function setTurbo() {

@@ -31,3 +31,9 @@ fieldset {
     position: absolute;
     right:0px;
 }
+.tiny { font-size: 7pt; }
+.small { font-size: 10pt; }
+.medium { font-size: 12pt; }
+.large { font-size: 16pt; }
+.extra-large { font-size: 24pt; }
+.xxl { font-size: 32pt; }
