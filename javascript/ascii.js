@@ -48,7 +48,7 @@ window.onload = function() {
 	function setAnime() {
 		animeType = ANIMATIONS[animation.value];
 		animeTypeArray = animeType.split("=====\n");
-		textarea.innerText = animeType;
+		textarea.innerHTML = animeType;
 	}
 	
 	function setSize() {
