@@ -21,7 +21,7 @@ header {
 	height: 400px;
 	font-family: monospace;
 	font-weight: bold;
-	font-size: 12pt;
+	/* font-size: 12pt; */
 }
 fieldset {
 	border: 5px solid black;
