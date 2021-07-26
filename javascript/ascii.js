@@ -1,4 +1,5 @@
 window.onload = function() {
+	"use strict";
 	
 	var textarea = document.getElementById("text-area");
 	var start = document.getElementById("start");
