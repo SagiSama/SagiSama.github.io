@@ -4,6 +4,8 @@ window.onload = function() {
 	var textarea = document.getElementById("text-area");
 	var start = document.getElementById("start");
 	start.onclick = animate;
+	var stop = document.getElementById("stop");
+	stop.onclick = terminate;
 	var animation = document.getElementById("animation");
 	animation.onchange = setAnime;
 	var size = document.getElementById("fontsize");
@@ -15,13 +17,25 @@ window.onload = function() {
 	let interval = 250;
 	let i = 0;
 	let timer = null;
+	let runStatus = false;
 	function animate() {
- 		if (timer === null) {
- 			timer = setInterval(display, interval);
+		if(animeType === "Blank" || animeType === null || animeType === "") {
+			alert("Please choose animation type");
 		} else {
-			clearInterval(timer);
- 			timer = null;
+			timer = setInterval(display, interval);
+			stop.disabled = false;
+			start.disabled = true;
+			runStatus = true;
+			animation.disabled = true;
 		}
+	}
+	
+	function terminate() {
+		clearInterval(timer);
+		timer = null;
+		stop.disabled = true;
+		start.disabled = false;
+		runStatus = false;
 	} 
 	
 	function display() {
@@ -47,7 +61,10 @@ window.onload = function() {
 		} else {
 			interval=250;
 		}
-		clearInterval(timer);
-		timer = setInterval(display, interval);
+		if(runStatus) {
+			clearInterval(timer);
+			timer = null;
+			timer = setInterval(display, interval);
+		}
 	}
 };
