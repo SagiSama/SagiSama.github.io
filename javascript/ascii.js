@@ -41,7 +41,11 @@ window.onload = function() {
 	
 	function display() {
 		textarea.innerHTML = animeTypeArray[i]; 
-		(i+1==animeTypeArray.length) ? i=0 : i=i+1;
+		if(i+1==animeTypeArray.length) {
+			i=0;
+		} else {
+			i++;
+		}
 	}
 	
 	let animeType = null;
