@@ -40,14 +40,13 @@ const reverse = function reverse(word) {
 
 // Task 6
 let findLongestWord = function(strArr) {
-	let len=0, i=0;
-	while(i<strArr.length) {
-		if(len<strArr[i].length) {
-			len = strArr[i].length;
-		}
-		i++;
-	}
-	return len;
+	return strArr.reduce(function (a, b) {
+		return a.length > b.length ? a : b;
+	}).length;
+	// safe alternative
+	// return strArr.sort(function (a, b) {
+    //     return b.length - a.length;
+    // })[0].length;
 };
 
 // Task 7
