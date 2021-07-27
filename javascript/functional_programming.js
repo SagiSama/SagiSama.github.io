@@ -34,6 +34,10 @@ const multiply = function multiply1(arr) {
 		i++;
 	}
 	return total;
+	
+	arr.reduce(function (acc, currentValue) {
+		return accumulator * currentValue;
+	}, 0);
 };
 
 // Task 5
