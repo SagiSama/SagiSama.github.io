@@ -35,9 +35,10 @@ const multiply = function multiply1(arr) {
 	}
 	//return total;
 	
-	arr.reduce(function (accumulator, currentValue) {
+	let total = arr.reduce(function (accumulator, currentValue) {
 		return accumulator * currentValue;
 	}, 0);
+	return total;
 };
 
 // Task 5
