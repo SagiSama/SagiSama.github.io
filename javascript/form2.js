@@ -13,11 +13,10 @@ window.onload = function() {
 
 	function updateValue(e) {
 		isValid = regex.test(date.value);
-		alert(isValid);
 		if(isValid) {
-			date_error.className = "dt";
-		} else {
 			date_error.className = "df";
+		} else {
+			date_error.className = "dt";
 		}
 	}
 }
