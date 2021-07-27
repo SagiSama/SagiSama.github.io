@@ -28,17 +28,9 @@ const sum = function sum(arr) {
 };
 
 const multiply = function multiply1(arr) {
-	let total=1, i=0;
-	while(i<arr.length) {
-		total *= arr[i];
-		i++;
-	}
-	//return total;
-	
-	let total = arr.reduce(function (accumulator, currentValue) {
+	return arr.reduce(function (accumulator, currentValue) {
 		return accumulator * currentValue;
 	}, 0);
-	return total;
 };
 
 // Task 5
