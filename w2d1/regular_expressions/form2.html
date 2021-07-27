@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../../styles/form2.css">
+	<script type="text/javascript" src="../../javascript/form2.js"></script>
 	
 	<title>Regular Expressions</title>
 </head>
@@ -15,8 +17,8 @@
 	    Bootstrap
 	  </a>
 	</nav>
-    <h2 style="margin: 20px">New Product Form</h2>
-    <div style="width: 90%; margin: auto">
+    <h2>New Product Form</h2>
+    <div id="main">
 		<form>
 		  <div class="form-row">
 		    <div class="form-group col-md-6">
@@ -46,12 +48,13 @@
 		    </div>
 		    <div class="form-group col-md-6">
 		    	<label>Date Supplied</label>
-		    	<input type="text" name="date" class="form-control" placeholder="yyyy-mm-dd" pattern="^\d{4}-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])$" title="Enter a valid Date" required>
+		    	<input type="text" name="date" id="date" class="form-control" placeholder="yyyy-mm-dd" pattern="^\d{4}-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])$" title="Enter a valid Date" required>
+		    	<span id="date_error" class="dt">Insert a valid Date</span>
 		    </div>
 	      </div>
-	      <button type="button" class="btn btn-primary">Reset</button>
-	      <button type="button" class="btn btn-primary">Cancel</button>
-	      <button type="submit" class="btn btn-primary">Add Product</button>
+	      <button type="button" class="btn btn-outline-secondary float-right ml-5">Reset</button>
+	      <button type="button" class="btn btn-outline-danger float-right ml-5">Cancel</button>
+	      <button id="submit" type="submit" class="btn btn-outline-primary float-right ml-5">Add Product</button>
 		</form>
 	  </div>
 </body>

@@ -1,0 +1,24 @@
+window.onload = function() {
+	"use strict";
+	
+	let isValid = false;
+	const regEx = /^\d{4}-\d{2}-\d{2}$/;
+	const regex = /^\d{4}-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])$/;
+	
+	let date = document.getElementById("date");
+	let date_error = document.getElementById("date_error");
+	let submit = document.getElementById("submit");
+	
+	date.addEventListener('onchange', validate);
+	
+	function validate() {
+		alert(isValid);
+		isValid = regex.match(date.value);
+		alert(isValid);
+		if(isValid) {
+			date_error.className = "dt";
+		} else {
+			date_error.className = "dn";
+		}
+	}
+}

@@ -1,0 +1,11 @@
+#main {
+	width: 90%; 
+	margin: auto;
+}
+h2 { margin: 20px }
+.dt {
+    display: block;
+}
+.df {
+    display: none;
+}
