@@ -31,7 +31,7 @@ const sum = function sum(arr) {
 const multiply = function multiply1(arr) {
 	return arr.reduce(function (accumulator, currentValue) {
 		return accumulator * currentValue;
-	}, 0);
+	}, 1);
 };
 
 // Task 5
