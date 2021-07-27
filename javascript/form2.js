@@ -9,11 +9,10 @@ window.onload = function() {
 	let date_error = document.getElementById("date_error");
 	let submit = document.getElementById("submit");
 	
-	date.addEventListener('onchange', validate);
-	
-	function validate() {
-		alert(isValid);
-		isValid = regex.match(date.value);
+	date.addEventListener('change', updateValue);
+
+	function updateValue(e) {
+		isValid = regex.test(date.value);
 		alert(isValid);
 		if(isValid) {
 			date_error.className = "dt";
