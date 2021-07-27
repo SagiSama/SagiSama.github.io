@@ -15,7 +15,8 @@ function maxOfThree(n1, n2, n3) {
 // Task 3
 const isVowel = function(vovel) {
 	const charString = "aeiouAEIOU";
-	return charString.indexOf(vovel) > -1;
+	const trueFalseArr = charString.split("").map(s => s === vovel);
+	return trueFalseArr.includes(true);
 };
 
 // Task 4
