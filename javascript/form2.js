@@ -17,7 +17,7 @@ window.onload = function() {
 		if(isValid) {
 			date_error.className = "dt";
 		} else {
-			date_error.className = "dn";
+			date_error.className = "df";
 		}
 	}
 }
