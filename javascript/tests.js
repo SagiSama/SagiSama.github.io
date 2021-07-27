@@ -49,6 +49,6 @@ describe("reverse", function () {
 describe("filterLongWords", function () {
     it("FilterLongWords an takes an array of words and an integer i and returns the array of words that are longer than i",
         function () {
-            assert.equal([], filterLongWords(["Expected", "out", "for", "functions"], 9));
+            assert.equal(["functions"], filterLongWords(["Expected", "out", "for", "functions"], 9));
         });
 });
