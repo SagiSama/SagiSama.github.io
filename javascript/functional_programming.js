@@ -33,7 +33,7 @@ const multiply = function multiply1(arr) {
 		total *= arr[i];
 		i++;
 	}
-	return total;
+	//return total;
 	
 	arr.reduce(function (acc, currentValue) {
 		return accumulator * currentValue;
