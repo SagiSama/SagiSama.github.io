@@ -11,7 +11,7 @@ String.prototype.filter = function(bannedList) {
         .join(' ');
 }
 var string = new String("IT is not good!");
-//var bannedList = ['is', 'not'];
+var bannedList = ['is', 'not'];
 // console.log("=-> "+string.filter(bannedList));
 
 // Exersice 2
