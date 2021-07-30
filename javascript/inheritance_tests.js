@@ -3,6 +3,6 @@ describe("filter", function () {
         function () {
         	var string = new String("IT is not good!");
 			var bannedList = ['is', 'not'];
-            assert.equal("IT good!", "IT is not good!".filter(['is', 'not']));
+            assert.equal("IT good!", string.filter(bannedList));
         });
 });
