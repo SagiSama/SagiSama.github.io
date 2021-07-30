@@ -22,7 +22,6 @@ function Arr(value) {
 Arr.prototype.bubbleSort = function() {
   var result = [];
   for(var i=0; i<this.value.length; i++) {
-    console.log(this.value[i]);
     for(var j=0; j<this.value.length; j++) {
       var tmp;
       if(this.value[i]<this.value[j]) {
