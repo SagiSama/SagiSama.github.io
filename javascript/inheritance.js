@@ -12,7 +12,13 @@ String.prototype.filter = function(bannedList) {
 }
 var string = new String("IT is not good!");
 var bannedList = ['is', 'not'];
-// console.log("=-> "+string.filter(bannedList));
+console.log("=-> "+string.filter(bannedList));
+
+// Approach 2
+String.prototype.filter1 = function(bannedList) {
+ return this.split(" ").filter((str) => { return !bannedList.includes(str) })
+        .join(' ');;
+};
 
 // Exersice 2
 
