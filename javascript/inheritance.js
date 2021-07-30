@@ -11,8 +11,8 @@ String.prototype.filter = function(bannedList) {
         .join(' ');
 }
 var string = new String("IT is not good!");
-var bannedList = ['is', 'not'];
-console.log("=-> "+string.filter(bannedList));
+//var bannedList = ['is', 'not'];
+// console.log("=-> "+string.filter(bannedList));
 
 // Exersice 2
 
@@ -35,7 +35,7 @@ Arr.prototype.bubbleSort = function() {
   return this.value;
 }
 var arr = new Arr([1,2,3,4,0,-1,-9,3]);
-console.log("=-> "+arr.bubbleSort());
+// console.log("=-> "+arr.bubbleSort());
 
 // Exersice 3
 
