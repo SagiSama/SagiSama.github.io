@@ -5,14 +5,13 @@ function String(...value) {
 }
 String.prototype.filter = function(bannedList) {
     var strArr = this.value.toString().split(' ');
-    console.log("... "+strArr+" "+typeof strArr);
     return strArr
         .filter((str) => { return !bannedList.includes(str) })
         .join(' ');
 }
 var string = new String("IT is not good!");
 var bannedList = ['is', 'not'];
-console.log("=-> "+string.filter(bannedList));
+// console.log("=-> "+string.filter(bannedList));
 
 // Approach 2
 String.prototype.filter1 = function(bannedList) {
