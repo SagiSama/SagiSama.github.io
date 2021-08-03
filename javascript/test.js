@@ -51,17 +51,17 @@ describe("endOfMonth", function () {
 describe("addInterest", function () {
 	it("addInterest multiply deposit",
         function () {
-        	let savinAccount = new SavingsAccount(10, 2);
-			savinAccount.deposit(1);
-			savingAccout.addInterest();
-            assert.equal(0.02, savingAccout.getBalance());
+        	let savingAccount = new SavingsAccount(10, 2);
+			savingAccount.deposit(1);
+			savingAccount.addInterest();
+            assert.equal(0.02, savingAccount.getBalance());
         });
 });
 
-let savinAccount = new SavingAccount(10, 2);
+let savingAccount = new SavingsAccount(10, 2);
 describe("toString", function () {
 	it("toString of saving account return string",
         function () {
-            assert.equal("Account 10: balance 0.02: interest 2", savingAccout.toString());
+            assert.equal("Account 10: balance 0.02: interest 2", savingAccount.toString());
         });
 });
