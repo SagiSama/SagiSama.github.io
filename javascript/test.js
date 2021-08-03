@@ -23,9 +23,7 @@ describe("deposit", function () {
 describe("withdraw", function () {
 	it("withdraw return balance minus withdraw",
         function () {
-			let acc = new Account(12);
-			acc.deposit(2);
-            assert.equal(1, acc.withdraw(1));
+            assert.equal(1, new Account(12).deposit(2).withdraw(1));
         });
 });
 
