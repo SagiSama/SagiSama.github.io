@@ -47,3 +47,19 @@ describe("endOfMonth", function () {
             assert.equal("", account.endOfMonth());
         });
 });
+
+let savinAccount = new SavingAccount(10, 2)
+describe("addInterest", function () {
+	savingAccout.addInterest();
+	it("addInterest multiply deposit",
+        function () {
+            assert.equal(20, savingAccout.getBalance());
+        });
+});
+
+describe("toString", function () {
+	it("toString return string",
+        function () {
+            assert.equal("Account 20: balance 0: interest: 10", savingAccout.toString());
+        });
+});
