@@ -147,6 +147,13 @@ describe("endOfMonth", function () {
     it("endOfMonth return each account endOfMonth by it's type", 
     	function () {
             assert.equal("Account 1: balance 0,Account 2: balance 0: interest 100,Account 3: balance 0: overdraft 1, "+
-            			 "Interest SavingsAccount 2 balance 0 interest 100, CheckingAccount 3 balance: 0 overdraft limit: 1", bank.accountReport());
+            			 "Interest SavingsAccount 2 balance 0 interest 100, CheckingAccount 3 balance: 0 overdraft limit: 1", bank.endOfMonth());
+	});
+});
+
+describe("endOfMonth", function () {
+    it("endOfMonth of checking account adds warning when balance negative", 
+    	function () {
+            assert.equal("Warning, low balance CheckingAccount 3 balance: 0 overdraft limit: 1", checkingAccount.endOfMonth());
 	});
 });
