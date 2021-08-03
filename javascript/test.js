@@ -18,3 +18,10 @@ describe("deposit", function () {
             assert.equal(14, new Account(12).deposit(2));
         });
 });
+
+describe("withdraw", function () {
+    it("withdraw returns account's balance",
+        function () {
+            assert.equal(new RangeError("Withdraw amount has to be greater than zero"), new Account(12).withdraw(14));
+        });
+});
