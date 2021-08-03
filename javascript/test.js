@@ -28,14 +28,14 @@ describe("withdraw", function () {
 });
 
 describe("toString", function () {
-	it("toString return balance minus withdraw",
+	it("toString return string",
         function () {
             assert.equal("Account 12: balance 1", account.toString());
         });
 });
 
 describe("endOfMonth", function () {
-	it("toString return balance minus withdraw",
+	it("endOfMonth do nothing",
         function () {
             assert.equal("", account.endOfMonth());
         });
