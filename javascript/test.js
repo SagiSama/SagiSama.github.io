@@ -68,10 +68,12 @@ describe("toString", function () {
 
 let checkingAccount = new CheckingAccount(10, 5);
 describe("withdraw", function () {
-	//it("withdraw overdraft set negative balance with limit",
-    //    function () {
-    //        assert.equal("Account 10: balance 0: interest 2", checkingAccount.withdraw(16));
-    //    });
+	it("withdraw overdraft set negative balance with limit",
+        function () {
+            assert.equal(-1, checkingAccount.withdraw(11));
+        });
+});
+describe("withdraw", function () {
     it('catching thrown errors', () => {
     	expect(() => checkingAccount.withdraw(16)).to.throw(); // PASS
 	});
