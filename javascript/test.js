@@ -78,7 +78,7 @@ describe("withdraw", function () {
 describe("withdraw", function () {
     it('catching thrown errors', 
     	function () {
-			assert.throws(iThrowError(), RangeError, checkingAccount.withdraw(11));
+			assert.throws(RangeError(), Error, checkingAccount.withdraw(11));
 	});
 });
 
