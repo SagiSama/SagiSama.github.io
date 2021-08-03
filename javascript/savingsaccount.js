@@ -13,6 +13,11 @@ class SavingsAccount extends Account {
     toString() {
         return "Account " + this._number + ": balance " + this._balance + ": interest " + this._interest;
     }
+    
+    endOfMonth() {
+    	addInterest();
+    	return "Interest SavingsAccount "+this._number+" balance "+this._balance+" interest "+this._interest;
+    }
 }
 
 class CheckingAccount extends Account {
@@ -41,6 +46,14 @@ class CheckingAccount extends Account {
     
     toString() {
         return "Account " + this._number + ": balance " + this._balance + ": overdraft " + this._overdraft;
+    }
+    
+    endOfMonth() {
+    	warning = '';
+    	if (this._balance < 0) {
+    		warning = "Warning, low balance ";
+    	}
+    	return warning+"CheckingAccount "+this._number+" balance: "+this._balance+" overdraft limit: "+this._overdraft;
     }
 }
 
@@ -78,5 +91,13 @@ class Bank {
 	
 	accountReport() {
 		return this._accounts.toString();
+	}
+	
+	endOfMonth() {
+		result = '';
+		for(let i=0; i<this._accounts.length; i++) {
+			result += this._accounts[i].endOfMonth();
+		}
+		return result;
 	}
 }
