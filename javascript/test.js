@@ -13,7 +13,7 @@ describe("getBalance", function () {
 });
 
 describe("deposit", function () {
-    it("deposit add balance, return nothing",
+    it("deposit add deposit to balance",
         function () {
         	let acc = new Account(12);
         	acc.deposit(2);
@@ -23,7 +23,7 @@ describe("deposit", function () {
 
 
 describe("withdraw", function () {
-	it("withdraw return balance minus withdraw",
+	it("withdraw minus withdraw from balance",
         function () {
             let ac = new Account(12);
             ac.deposit(2);
