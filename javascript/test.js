@@ -66,11 +66,12 @@ describe("toString", function () {
         });
 });
 
-let checkingAccount = new CheckingAccount(10, 5);
+let checkingAccount = new CheckingAccount(1100, 5);
 describe("withdraw", function () {
 	it("withdraw overdraft set negative balance with limit",
         function () {
-        	checkingAccount.withdraw(11)
+        	checkingAccount.deposit(10);
+        	checkingAccount.withdraw(11);
             assert.equal(-1, checkingAccount.getBalance());
         });
 });
