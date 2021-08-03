@@ -24,7 +24,7 @@ describe("withdraw", function () {
         function () {
             let acc = new Account(12);
             acc.deposit(2);
-            assert.equal(1, acc.withdraw(11));
+            assert.equal(1, acc.withdraw(1));
         });
 });
 
