@@ -142,6 +142,7 @@ describe("accountReport", function () {
 	});
 });
 
+bank.addAccount();
 bank.addSavingsAccount(12);
 describe("endOfMonth", function () {
     it("endOfMonth return each account endOfMonth by it's type", 
@@ -154,6 +155,6 @@ describe("endOfMonth", function () {
 describe("endOfMonth", function () {
     it("endOfMonth of checking account adds warning when balance negative", 
     	function () {
-            assert.equal("Warning, low balance CheckingAccount 3 balance: 0 overdraft limit: 1", checkingAccount.endOfMonth());
+            assert.equal("Warning, low balance CheckingAccount 1100 balance: -1 overdraft limit: 10", checkingAccount.endOfMonth());
 	});
 });
