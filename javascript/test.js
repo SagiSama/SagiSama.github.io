@@ -20,8 +20,15 @@ describe("deposit", function () {
 });
 
 describe("withdraw", function () {
-	it("deposit add balance, return nothing",
+	it("withdraw return balance minus withdraw",
         function () {
             assert.equal(1, new Account(12).withdraw(11));
+        });
+});
+
+describe("toString", function () {
+	it("toString return balance minus withdraw",
+        function () {
+            assert.equal("Account 12: balance 0.0", new Account(12).toString());
         });
 });
