@@ -50,9 +50,9 @@ describe("endOfMonth", function () {
 
 let savinAccount = new SavingAccount(10, 2)
 describe("addInterest", function () {
-	savingAccout.addInterest();
 	it("addInterest multiply deposit",
         function () {
+			savingAccout.addInterest();
             assert.equal(20, savingAccout.getBalance());
         });
 });
