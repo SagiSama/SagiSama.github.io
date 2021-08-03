@@ -142,7 +142,6 @@ describe("accountReport", function () {
 	});
 });
 
-bank.addAccount();
 bank.addSavingsAccount(12);
 describe("endOfMonth", function () {
     it("endOfMonth return each account endOfMonth by it's type", 
