@@ -15,7 +15,8 @@ describe("getBalance", function () {
 describe("deposit", function () {
     it("deposit add balance, return nothing",
         function () {
-        	let acc = new Account(12).deposit(2);
+        	let acc = new Account(12);
+        	acc.deposit(2);
             assert.equal(2, acc.getBalance());
         });
 });
