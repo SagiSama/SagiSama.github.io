@@ -22,6 +22,6 @@ describe("deposit", function () {
 describe("withdraw", function () {
     it("withdraw returns account's balance",
         function () {
-            assert.equal(new RangeError("Withdraw amount has to be greater than zero"), new Account(12).withdraw(14));
+            assert.equal(Error("Insufficient funds"), new Account(12).withdraw(14));
         });
 });
