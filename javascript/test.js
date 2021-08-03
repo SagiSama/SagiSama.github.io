@@ -146,6 +146,7 @@ describe("accountReport", function () {
 describe("endOfMonth", function () {
     it("endOfMonth return each account endOfMonth by it's type", 
     	function () {
-            assert.equal('Account 1: balance 0,Account 3: balance 0: overdraft 123', bank.accountReport());
+            assert.equal("Account 1: balance 0,Account 2: balance 0: interest 100,Account 3: balance 0: overdraft 1, "+
+            			 "Interest SavingsAccount 2 balance 0 interest 100, CheckingAccount 3 balance: 0 overdraft limit: 1", bank.accountReport());
 	});
 });

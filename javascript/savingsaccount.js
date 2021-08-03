@@ -15,7 +15,7 @@ class SavingsAccount extends Account {
     }
     
     endOfMonth() {
-    	addInterest();
+    	this.addInterest();
     	return "Interest SavingsAccount "+this._number+" balance "+this._balance+" interest "+this._interest;
     }
 }
@@ -49,7 +49,7 @@ class CheckingAccount extends Account {
     }
     
     endOfMonth() {
-    	warning = '';
+    	let warning = '';
     	if (this._balance < 0) {
     		warning = "Warning, low balance ";
     	}
@@ -94,9 +94,11 @@ class Bank {
 	}
 	
 	endOfMonth() {
-		result = '';
+		let result = '';
+		let comma = '';
 		for(let i=0; i<this._accounts.length; i++) {
-			result += this._accounts[i].endOfMonth();
+			result += comma+this._accounts[i].endOfMonth();
+			comma = ', ';
 		}
 		return result;
 	}
