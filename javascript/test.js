@@ -76,9 +76,9 @@ describe("withdraw", function () {
         });
 });
 describe("withdraw", function () {
-    it('catching thrown errors', 
+    it('withdraw overdraft catching thrown errors', 
     	function () {
-			assert.throws(RangeError(), Error, checkingAccount.withdraw(11));
+    		assert.throws(function () { checkingAccount.withdraw(11) }, RangeError, "Overdraft has to reached its limit");
 	});
 });
 
