@@ -21,19 +21,19 @@ describe("deposit", function () {
 
 
 describe("withdraw", function () {
-	let acc = new Account(12);
-	acc.deposit(2);
 	it("withdraw return balance minus withdraw",
         function () {
+			let acc = new Account(12);
+			acc.deposit(2);
             assert.equal(1, acc.withdraw(1));
         });
 });
 
 describe("toString", function () {
-	let acc = new Account(12);
 	it("toString return string",
         function () {
-            assert.equal("Account 12: balance 1", acc.toString());
+			let acc = new Account(12);
+            assert.equal("Account 12: balance 0", acc.toString());
         });
 });
 
