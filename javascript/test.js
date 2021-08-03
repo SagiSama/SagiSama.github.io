@@ -13,15 +13,15 @@ describe("getBalance", function () {
 });
 
 describe("deposit", function () {
-    it("deposit returns account's balance add to deposit",
+    it("deposit add balance, return nothing",
         function () {
-            assert.equal(2, new Account(12).deposit(2));
+            assert.equal("undefined", new Account(12).deposit(2));
         });
 });
 
 describe("withdraw", function () {
     it("withdraw returns account's balance",
         function () {
-            assert.equal(Error("Insufficient funds"), new Account(12).withdraw(14));
+            assert.equal("Insufficient funds", new Account(12).withdraw(14));
         });
 });
