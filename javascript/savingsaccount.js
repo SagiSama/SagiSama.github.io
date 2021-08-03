@@ -43,3 +43,40 @@ class CheckingAccount extends Account {
         return "Account " + this._number + ": balance " + this._balance + ": overdraft " + this._overdraft;
     }
 }
+
+class Bank {
+	constructor() {
+		this._nextNumber = 0;
+		this._accounts = [];
+	}
+	
+	addAccount() {
+	  this._nextNumber += 1;
+		this._accounts.push(new Account(this._nextNumber));
+		return this._nextNumber;
+	}
+	
+	addSavingsAccount(interest) {
+	  this._nextNumber += 1;
+		this._accounts.push(new SavingsAccount(this._nexNumber, interest));
+		return this._nextNumber;
+	}
+	
+	addCheckingAccount(overdraft) {
+	  this._nextNumber += 1;
+		this._accounts.push(new CheckingAccount(this._nextNumber, overdraft));
+		return this._nextNumber;
+	}
+	
+	closeAccount(number) {
+		for(let i=0; i<this._accounts.length; i++) {
+			if(this._accounts[i].getNumber() == number) {
+				this._accounts.splice(i, 1);
+			}
+		}
+	}
+	
+	accountReport() {
+		return this._accounts.toString();
+	}
+}

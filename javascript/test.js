@@ -104,3 +104,40 @@ describe("toString", function () {
             assert.equal("Account 1100: balance -1: overdraft 10", checkingAccount.toString());
 	});
 });
+
+let bank = new Bank();
+describe("addAccount", function () {
+    it('addAccount return account number', 
+    	function () {
+            assert.equal(1, bank.addAccount());
+	});
+});
+
+describe("addSavingsAccount", function () {
+    it('addSavingsAccount return account number', 
+    	function () {
+            assert.equal(1, bank.addSavingsAccount(12));
+	});
+});
+
+describe("addCheckingAccount", function () {
+    it('addCheckingAccount return account number', 
+    	function () {
+            assert.equal(1, bank.addCheckingAccount(123));
+	});
+});
+
+describe("closeAccount", function () {
+    it('closeAccount delete account by number', 
+    	function () {
+	    	bank.closeAccount(2);
+            assert.equal('Account 1: balance 0,Account 3: balance 0', bank.closeAccount(2));
+	});
+});
+
+describe("accountReport", function () {
+    it('accountReport return accounts', 
+    	function () {
+            assert.equal('Account 1: balance 0,Account 3: balance 0', bank.accountReport());
+	});
+});
