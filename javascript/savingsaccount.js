@@ -58,7 +58,7 @@ class Bank {
 	
 	addSavingsAccount(interest) {
 	  this._nextNumber += 1;
-		this._accounts.push(new SavingsAccount(this._nexNumber, interest));
+		this._accounts.push(new SavingsAccount(this._nextNumber, interest));
 		return this._nextNumber;
 	}
 	
