@@ -131,13 +131,13 @@ describe("closeAccount", function () {
     it('closeAccount delete account by number', 
     	function () {
 	    	bank.closeAccount(2);
-            assert.equal('Account 1: balance 0,Account 3: balance 0', bank.accountReport(2));
+            assert.equal('Account 1: balance 0,Account 3: balance 0: overdraft 123', bank.accountReport(2));
 	});
 });
 
 describe("accountReport", function () {
     it('accountReport return accounts', 
     	function () {
-            assert.equal('Account 1: balance 0,Account 3: balance 0', bank.accountReport());
+            assert.equal('Account 1: balance 0,Account 3: balance 0: overdraft 123', bank.accountReport());
 	});
 });
