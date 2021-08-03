@@ -15,7 +15,7 @@ describe("getBalance", function () {
 describe("deposit", function () {
     it("deposit add balance, return nothing",
         function () {
-            assert.equal("undefined", new Account(12).deposit(2));
+            assert.equal(undefined, new Account(12).deposit(2));
         });
 });
 
