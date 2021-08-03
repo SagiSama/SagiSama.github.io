@@ -142,12 +142,15 @@ describe("accountReport", function () {
 	});
 });
 
-bank.addSavingsAccount(12);
 describe("endOfMonth", function () {
     it("endOfMonth return each account endOfMonth by it's type", 
     	function () {
+    		let bnk = new Bank();
+			bnk.addAccount();
+			bnk.addSavingsAccount(100);
+			bnk.addCheckingAccount(1);
             assert.equal("Account 1: balance 0,Account 2: balance 0: interest 100,Account 3: balance 0: overdraft 1, "+
-            			 "Interest SavingsAccount 2 balance 0 interest 100, CheckingAccount 3 balance: 0 overdraft limit: 1", bank.endOfMonth());
+            			 "Interest SavingsAccount 2 balance 0 interest 100, CheckingAccount 3 balance: 0 overdraft limit: 1", bnk.endOfMonth());
 	});
 });
 
