@@ -38,4 +38,8 @@ class CheckingAccount extends Account {
         }
         this._balance -= amount;
     }
+    
+    toString() {
+        return "Account " + this._number + ": balance " + this._balance + ": overdraft " + this._overdraft;
+    }
 }

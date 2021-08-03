@@ -82,3 +82,24 @@ describe("withdraw", function () {
 	});
 });
 
+describe("getOverdraft", function () {
+    it('getOverdraft return overdraft', 
+    	function () {
+            assert.equal(10, checkingAccount.setOverdraft(10));
+	});
+});
+
+describe("setOverdraft", function () {
+    it('setOverdraft set overdraft', 
+    	function () {
+    		checkingAccount.setOverdraft(10);
+            assert.equal(10, checkingAccount.getOverdraft());
+	});
+});
+
+describe("toString", function () {
+    it('toString return string', 
+    	function () {
+            assert.equal("Account 10: balance 10: overdraft 10", checkingAccount.toString());
+	});
+});
