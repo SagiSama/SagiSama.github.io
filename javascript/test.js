@@ -62,6 +62,6 @@ let savingAccount = new SavingsAccount(10, 2);
 describe("toString", function () {
 	it("toString of saving account return string",
         function () {
-            assert.equal("Account 10: balance 0.02: interest 2", savingAccount.toString());
+            assert.equal("Account 10: balance 0: interest 2", savingAccount.toString());
         });
 });
