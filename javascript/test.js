@@ -48,16 +48,17 @@ describe("endOfMonth", function () {
         });
 });
 
-let savinAccount = new SavingAccount(10, 2);
 describe("addInterest", function () {
 	it("addInterest multiply deposit",
         function () {
+        	let savinAccount = new SavingAccount(10, 2);
 			savinAccount.deposit(1);
 			savingAccout.addInterest();
             assert.equal(0.02, savingAccout.getBalance());
         });
 });
 
+let savinAccount = new SavingAccount(10, 2);
 describe("toString", function () {
 	it("toString of saving account return string",
         function () {
