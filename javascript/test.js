@@ -15,7 +15,7 @@ describe("getBalance", function () {
 describe("deposit", function () {
     it("deposit returns account's balance add to deposit",
         function () {
-            assert.equal(14, new Account(12).deposit(2));
+            assert.equal(2, new Account(12).deposit(2));
         });
 });
 
