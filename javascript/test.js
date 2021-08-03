@@ -52,14 +52,15 @@ let savinAccount = new SavingAccount(10, 2);
 describe("addInterest", function () {
 	it("addInterest multiply deposit",
         function () {
+			savinAccount.deposit(1);
 			savingAccout.addInterest();
-            assert.equal(20, savingAccout.getBalance());
+            assert.equal(0.02, savingAccout.getBalance());
         });
 });
 
 describe("toString", function () {
 	it("toString of saving account return string",
         function () {
-            assert.equal("Account 20: balance 0: interest: 10", savingAccout.toString());
+            assert.equal("Account 10: balance 0.02: interest 2", savingAccout.toString());
         });
 });
