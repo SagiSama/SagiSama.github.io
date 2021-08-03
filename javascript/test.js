@@ -58,7 +58,7 @@ describe("addInterest", function () {
 });
 
 describe("toString", function () {
-	it("toString return string",
+	it("toString of saving account return string",
         function () {
             assert.equal("Account 20: balance 0: interest: 10", savingAccout.toString());
         });
