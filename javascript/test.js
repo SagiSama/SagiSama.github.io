@@ -22,6 +22,6 @@ describe("deposit", function () {
 describe("withdraw", function () {
     it("withdraw returns account's balance",
     	function () {
-	    	expect(new Account(12).withdraw(14)).to.throw('Insufficient funds');
+	    	assert.equal(expect(new Account(12).withdraw(14)).to.throw('Insufficient funds'));
     	});
 });
