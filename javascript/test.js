@@ -70,7 +70,8 @@ let checkingAccount = new CheckingAccount(10, 5);
 describe("withdraw", function () {
 	it("withdraw overdraft set negative balance with limit",
         function () {
-            assert.equal(-1, checkingAccount.withdraw(11));
+        	checkingAccount.withdraw(11)
+            assert.equal(-1, checkingAccount.getBalance());
         });
 });
 describe("withdraw", function () {
