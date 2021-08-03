@@ -78,7 +78,7 @@ describe("withdraw", function () {
 describe("withdraw", function () {
     it('withdraw overdraft catching thrown errors', 
     	function () {
-    		assert.throws(function () { checkingAccount.withdraw(11) }, RangeError, "Overdraft has to reached its limit");
+    		assert.throws(function () { checkingAccount.withdraw(5) }, RangeError, "Overdraft has to reached its limit");
 	});
 });
 
