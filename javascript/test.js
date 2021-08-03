@@ -116,14 +116,14 @@ describe("addAccount", function () {
 describe("addSavingsAccount", function () {
     it('addSavingsAccount return account number', 
     	function () {
-            assert.equal(1, bank.addSavingsAccount(12));
+            assert.equal(2, bank.addSavingsAccount(12));
 	});
 });
 
 describe("addCheckingAccount", function () {
     it('addCheckingAccount return account number', 
     	function () {
-            assert.equal(1, bank.addCheckingAccount(123));
+            assert.equal(3, bank.addCheckingAccount(123));
 	});
 });
 
@@ -131,7 +131,7 @@ describe("closeAccount", function () {
     it('closeAccount delete account by number', 
     	function () {
 	    	bank.closeAccount(2);
-            assert.equal('Account 1: balance 0,Account 3: balance 0', bank.closeAccount(2));
+            assert.equal('Account 1: balance 0,Account 3: balance 0', bank.accountReport(2));
 	});
 });
 
