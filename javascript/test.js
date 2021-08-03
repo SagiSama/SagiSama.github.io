@@ -149,7 +149,7 @@ describe("endOfMonth", function () {
 			bnk.addAccount();
 			bnk.addSavingsAccount(100);
 			bnk.addCheckingAccount(1);
-            assert.equal("Account 1: balance 0,Account 2: balance 0: interest 100,Account 3: balance 0: overdraft 1, Interest SavingsAccount 2 balance 0 interest 100, CheckingAccount 3 balance: 0 overdraft limit: 1", bnk.endOfMonth());
+            assert.equal(", Interest SavingsAccount 2 balance 0 interest 100, CheckingAccount 3 balance: 0 overdraft limit: 1", bnk.endOfMonth());
 	});
 });
 
