@@ -65,3 +65,12 @@ describe("toString", function () {
             assert.equal("Account 10: balance 0: interest 2", savingAccount.toString());
         });
 });
+
+let checkingAccount = new CheckingAccount(10, 5);
+describe("withdraw", function () {
+	it("withdraw overdraft set negative balance with limit",
+        function () {
+            assert.equal("Account 10: balance 0: interest 2", checkingAccount.withdraw(16));
+        });
+});
+
