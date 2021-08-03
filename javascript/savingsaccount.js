@@ -64,19 +64,19 @@ class Bank {
 	}
 	
 	addAccount() {
-	  this._nextNumber += 1;
-		this._accounts.push(new Account(this._nextNumber));
+		this._nextNumber += 1;
+	  	this._accounts.push(new Account(this._nextNumber));
 		return this._nextNumber;
 	}
 	
 	addSavingsAccount(interest) {
-	  this._nextNumber += 1;
+	  	this._nextNumber += 1;
 		this._accounts.push(new SavingsAccount(this._nextNumber, interest));
 		return this._nextNumber;
 	}
 	
 	addCheckingAccount(overdraft) {
-	  this._nextNumber += 1;
+	  	this._nextNumber += 1;
 		this._accounts.push(new CheckingAccount(this._nextNumber, overdraft));
 		return this._nextNumber;
 	}
