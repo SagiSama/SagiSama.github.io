@@ -34,3 +34,11 @@ describe("toString", function () {
             assert.equal("Account 12: balance 0.0", new Account(12).toString());
         });
 });
+
+let account = new Account(12);
+describe("endOfMonth", function () {
+	it("toString return balance minus withdraw",
+        function () {
+            assert.equal("", account.endOfMonth());
+        });
+});
