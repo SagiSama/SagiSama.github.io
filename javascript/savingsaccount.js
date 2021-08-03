@@ -7,7 +7,7 @@ class SavingsAccount extends Account {
     }
     
     addInterest() {
-    	this._balance * this._interest / 100;
+    	this._balance *= this._interest / 100;
     }
     
     toString() {
