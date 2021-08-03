@@ -48,7 +48,7 @@ describe("endOfMonth", function () {
         });
 });
 
-let savinAccount = new SavingAccount(10, 2)
+let savinAccount = new SavingAccount(10, 2);
 describe("addInterest", function () {
 	it("addInterest multiply deposit",
         function () {
