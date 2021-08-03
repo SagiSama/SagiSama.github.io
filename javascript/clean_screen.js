@@ -2,6 +2,8 @@ $(function() {
 	timer;
 });
 
-var timer = setInterval(function() {
-    alert("Message to alert every 5 seconds");
-}, 5000);
+var timer = setInterval(function() { grow; }, 5000);
+
+var grow = function() {
+	$("div").css.width() = 100px;
+}
