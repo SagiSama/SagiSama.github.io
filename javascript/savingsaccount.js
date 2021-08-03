@@ -11,6 +11,6 @@ class SavingsAccount extends Account {
     }
     
     toString() {
-        return "Account " + this._number + ": balance " + this._balance + ": interest" + this.interest;
+        return "Account " + this._number + ": balance " + this._balance + ": interest " + this._interest;
     }
 }
