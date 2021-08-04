@@ -4,10 +4,10 @@ fieldset {
 	left: 10%;
 }
 label {
-	float: left
+	float: left;
 }
 input {
-	float: right
+	float: right;
 }
 button {
 	width: 100%
