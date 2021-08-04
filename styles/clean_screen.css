@@ -13,5 +13,5 @@ button {
 	width: 100%
 }
 div:hover {
-  background-color: silver;
+  opacity: 0.5;
 }
