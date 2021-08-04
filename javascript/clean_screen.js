@@ -9,10 +9,10 @@ $(function() {
 
 let interval = 0;
 let size = 0;
-var timer = setInterval(function() { grow(size); }, 1000);
+var timer = setInterval(function() { grow(size); }, interval);
 
 var grow = function(s) {
-	size += 1;
+	size += s;
 	$("div").width(size).height(size);
 	$('div').css('border-radius', size+'px');
 }
@@ -23,8 +23,8 @@ var addBall = function() {
  	interval = parseInt($('#interval').val());
 	
 	$("body").append($("<div>", {
-		"width": $('#width').val(),
-	 	"height": $('#width').val(),
+		"width": parseInt($('#width').val())+'px',
+	 	"height": parseInt($('#width').val())+'px',
 	 	"css": {
 	 		"background-color": color
 	 	}
