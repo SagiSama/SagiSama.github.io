@@ -1,5 +1,5 @@
 $(function() {
-	timer;
+	//timer;
 	
   	var back = ["#ff0000","blue","gray","blue","pink","orange","red","brown"];
   	var rand = back[Math.floor(Math.random() * back.length)];
@@ -12,7 +12,7 @@ $(function() {
 	$("div").click(function(e){
 	   e.preventDefault();
 	   e.stopPropagation();
-	   alert($(this)[0].tagName);
+	   console.log($(this)[0]);
 	});
 });
 

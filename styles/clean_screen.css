@@ -3,9 +3,9 @@ div {
 	height: 50px;
 	background-color: red;
 	border-radius: 50px;
-    position: absolute;
+    /* position: absolute;
 	left: 50%;
-    top: 50%;
+    top: 50%; */
 }
 
 .ball {
