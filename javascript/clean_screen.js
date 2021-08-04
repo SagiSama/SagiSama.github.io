@@ -9,7 +9,7 @@ $(function() {
     //	$('div').remove(e);
 	//});
 	$('div').click(function(e) {
-		console.log(e[0]+" ---- "+e.target[0]);
+		console.log(e.target+" ---- "+this);
 		if ($(e.target).is('div')) {
 			$("div").remove(e.target);
 		}
