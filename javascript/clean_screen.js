@@ -40,7 +40,7 @@ var addBall = function() {
 	}));
 	
 	//clearInterval(intervalId);
-  	startInterval(interval);
+  	//startInterval(interval);
 }
 
 var generateRandomColor = function() {
