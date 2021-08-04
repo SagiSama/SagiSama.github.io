@@ -9,7 +9,7 @@ $(function() {
 
 let interval = 0;
 let size = 0;
-var timer = setInterval(function() { grow(size); }, interval);
+var timer = setInterval(function() { grow(size); }, 1000);
 
 var grow = function(s) {
 	size += s;
