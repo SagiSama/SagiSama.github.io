@@ -12,17 +12,15 @@ let size = 0;
 var timer = setInterval(function() { grow(size); }, 1000);
 
 var grow = function(s) {
-console.log("-size- "+size+" "+(typeof s)+" "+(typeof size));
-	size = parseInt(size) + parseInt(s);
+	size += s;
 	$("div").width(size).height(size);
 	$('div').css('border-radius', size+'px');
 }
 
 var addBall = function() {
 	let color = generateRandomColor();
- 	size = $('#growth').val();
- 	interval = $('#interval').val();
-	console.log(" ------- "+color+" "+size+" "+interval);
+ 	size = parseInt($('#growth').val());
+ 	interval = parseInt($('#interval').val());
 	
 	$("body").append($("<div>", {
 		"width": $('#width').val(),
