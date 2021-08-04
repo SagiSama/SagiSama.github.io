@@ -3,7 +3,7 @@ $(function() {
 	//	console.log(". ONCLICK?---- "+this);
 	//	$(this).remove(); 
 	//});
-	$( "div" ).click(function() {
+	$( "#divs" ).click(function() {
 		alert( "Handler for .click() called." );
 	});
 	$('button').click(function(){
@@ -32,6 +32,7 @@ var addBall = function() {
 	$("body").append($("<div>", {
 		"width": size+'px',
 	 	"height": size+'px',
+	 	"id": "divs",
 	 	"css": {
 	 		"background-color": generateRandomColor(),
 	 		"position": "absolute",
