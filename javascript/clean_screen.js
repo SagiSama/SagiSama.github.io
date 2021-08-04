@@ -24,7 +24,6 @@ var grow = function() {
 }
 
 var addBall = function() {
-	let color = generateRandomColor();
 	size = parseInt($('#width').val());
  	growth = parseInt($('#growth').val());
  	interval = parseInt($('#interval').val());
@@ -33,7 +32,7 @@ var addBall = function() {
 		"width": size+'px',
 	 	"height": size+'px',
 	 	"css": {
-	 		"background-color": color,
+	 		"background-color": generateRandomColor(),
 	 		"position": "absolute",
 	 		"left": generateRandomPosition()+'%',
 	 		"top": generateRandomPosition()+'%',
