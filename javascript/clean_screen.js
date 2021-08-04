@@ -30,7 +30,10 @@ var addBall = function() {
 		"width": parseInt($('#width').val())+'px',
 	 	"height": parseInt($('#width').val())+'px',
 	 	"css": {
-	 		"background-color": color
+	 		"background-color": color,
+	 		"position": "absolute",
+	 		"left": generateRandomPosition,
+	 		"top": generateRandomPosition,
 	 	}
 	}));
 	
@@ -42,4 +45,8 @@ var generateRandomColor = function() {
 	var back = ["#ff0000","blue","gray","blue","pink","orange","red","brown"];
   	var rand = back[Math.floor(Math.random() * back.length)];
   	return rand;
+}
+
+var generateRandomPosition = function() {
+	return Math.floor(Math.random() * 100);
 }
