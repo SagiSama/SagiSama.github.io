@@ -9,8 +9,11 @@ $(function() {
     //	$('div').remove('div');
 	//});
 	
-	$('div').click(function(e){
-	    $(e.target).remove();
+	//$('div').click(function(e){
+	//    $(e.target).remove();
+	//});
+	$('div').click(function() { 
+		$(this).remove(); 
 	});
 });
 
