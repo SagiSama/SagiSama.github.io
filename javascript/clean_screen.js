@@ -1,7 +1,9 @@
 $(function() {
 	timer;
 	//pop;
-	$("div").click(pop());
+	$('div').click(function() { 
+		pop();
+	});
 });
 
 let size = 50;
