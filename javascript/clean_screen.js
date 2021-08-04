@@ -49,7 +49,7 @@ var addBall = function() {
 }
 
 var generateRandomColor = function() {
-	var back = ["#ff0000","blue","gray","blue","pink","orange","red","brown"];
+	var back = ["#ff0000","red","orange","yellow","green","blue","cyan","purple","black","brown","magenta","tan","olive"];
   	var rand = back[Math.floor(Math.random() * back.length)];
   	return rand;
 }
