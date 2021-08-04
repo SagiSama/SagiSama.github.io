@@ -7,15 +7,15 @@ $(function() {
     });
 });
 
-var interval = 2000;
 let intervalId;
-let size = 0;
 function startInterval(_interval) {
+	console.log("====="+_interval);
   intervalId = setInterval(function() {
     grow();
   }, _interval);
 }
 
+let size = 0;
 var grow = function(s) {
 	size += s;
 	$("div").width(size).height(size);
