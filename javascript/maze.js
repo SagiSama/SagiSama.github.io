@@ -7,6 +7,7 @@ $(function(){
 		status = true;
 		collision = 0;
 		$('#status').text('Game started! ' + text);
+		$(".boundary").css("background-color", "#eeeeee");
 	});
 	
 	$("#end").mouseenter(function(){
