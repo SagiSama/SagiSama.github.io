@@ -7,7 +7,7 @@ $(function(){
 		status = true;
 		collision = 0;
 		//$('#status').text('Game started! ' + text);
-		$(".boundary.example>p").append($("<h3>", {"text": 'Game Started !', "css": {"color": 'blue'}}));
+		$(".boundary.example").text($("<h3>", {"text": 'Game Started !', "css": {"color": 'blue'}}));
 		$(".boundary").css("background-color", "#eeeeee");
 	});
 	
