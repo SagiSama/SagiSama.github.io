@@ -32,8 +32,8 @@ var addBall = function() {
 	 	"css": {
 	 		"background-color": color,
 	 		"position": "absolute",
-	 		"left": generateRandomPosition+'%',
-	 		"top": generateRandomPosition+'%',
+	 		"left": generateRandomPosition()+'%',
+	 		"top": generateRandomPosition()+'%',
 	 		'border-radius': parseInt($('#width').val())+'px',
 	 	}
 	}));
