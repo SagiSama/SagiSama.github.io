@@ -8,6 +8,6 @@ var timer = setInterval(function() { grow(); }, 250);
 var grow = function() {
 	console.log("called ===");
 	size += 10;
-	$("div").width(size).height(size);
+	$("div").width(size).height(size).addClass('ball');
 	$('div').css('border-radius', size+'px');
 }
