@@ -5,8 +5,13 @@ $(function() {
   	var rand = back[Math.floor(Math.random() * back.length)];
   	$('div').css('background', rand);
   	
-  	$('div').click(function(e) {
-    	$('div').remove(e);
+  	//$('div').click(function(e) {
+    //	$('div').remove(e);
+	//});
+	$('div').click(function(e) {
+		if ($(e.target).is('div')) {
+			$(current).remove("div");
+		}
 	});
 });
 
