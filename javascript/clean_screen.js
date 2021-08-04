@@ -1,8 +1,6 @@
 $(function() {
 	timer;
-	$('div').click(function() { 
-		pop();
-	});
+	
 });
 
 let size = 50;
@@ -20,3 +18,7 @@ var pop = function() {
 		$(current).remove("div");
 	});
 }
+
+$('div').click(function(e) {
+    $('div').remove(e);
+});
