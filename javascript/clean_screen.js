@@ -18,10 +18,10 @@ var grow = function(s) {
 }
 
 var addBall = function() {
-	console.log("---- red --- added --- button --- ");
 	let color = generateRandomColor();
  	size = $('#growth').val();
  	interval = $('#interval').val();
+	console.log(" ------- "+color+" "+size+" "+interval);
 	
 	$("body").append($("<div>", {
 		"width": $('#width').val(),
