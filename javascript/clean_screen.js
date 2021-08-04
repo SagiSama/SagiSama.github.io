@@ -10,10 +10,10 @@ $(function() {
        addBall();
     });
 });
-$(document).on('click', 'div', function(e){
-	alert("-0012zdd.");
-	$(this).remove();
-});
+//$(document).on('click', 'div', function(e){
+//	alert("-0012zdd.");
+//	$(this).remove();
+//});
 $(document).ready(function() {
   $("div").click(function () {
     alert("Hello!");
