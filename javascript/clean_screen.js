@@ -7,9 +7,13 @@ $(function() {
     });
 });
 
-let interval = 0;
+let intervalId;
 let size = 0;
-var timer = setInterval(function() { grow(size); }, 1000);
+function startInterval(_interval) {
+  intervalId = setInterval(function() {
+    grow();
+  }, _interval);
+}
 
 var grow = function(s) {
 	size += s;
@@ -29,6 +33,9 @@ var addBall = function() {
 	 		"background-color": color
 	 	}
 	}));
+	
+	clearInterval(intervalId);
+  	startInterval(interval);
 }
 
 var generateRandomColor = function() {
