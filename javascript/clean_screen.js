@@ -16,20 +16,22 @@ function startInterval(_interval, growth) {
 }
 
 let size = 0;
-var grow = function(s) {
-	size += s;
+let growth = 0;
+var grow = function() {
+	size += growth;
 	console.log(" =-> "+size);
 	$("div").width(size).height(size).css('border-radius', size+'px');
 }
 
 var addBall = function() {
 	let color = generateRandomColor();
+	size = parseInt($('#width').val());
  	let growth = parseInt($('#growth').val());
  	interval = parseInt($('#interval').val());
 	
 	$("body").append($("<div>", {
-		"width": parseInt($('#width').val())+'px',
-	 	"height": parseInt($('#width').val())+'px',
+		"width": size+'px',
+	 	"height": size+'px',
 	 	"css": {
 	 		"background-color": color,
 	 		"position": "absolute",
@@ -40,7 +42,7 @@ var addBall = function() {
 	}));
 	
 	//clearInterval(intervalId);
-  	startInterval(interval, growth);
+  	startInterval(interval);
 }
 
 var generateRandomColor = function() {
