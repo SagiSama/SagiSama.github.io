@@ -12,3 +12,6 @@ input {
 button {
 	width: 100%
 }
+div:hover {
+  background-color: silver;
+}

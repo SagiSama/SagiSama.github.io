@@ -1,6 +1,6 @@
 $(function() {  	
 	$('div').click(function() { 
-		console.log("---- "+this);
+		console.log(". ONCLICK?---- "+this);
 		$(this).remove(); 
 	});
 	$('button').click(function(){
@@ -19,7 +19,6 @@ let size = 0;
 let growth = 0;
 var grow = function() {
 	size += growth;
-	console.log(" =-> "+size);
 	$("div").width(size).height(size).css('border-radius', size+'px');
 }
 
