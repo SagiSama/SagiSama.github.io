@@ -3,7 +3,9 @@ $(function(){
 	let collision = 0;
 	
 	$( "#start" ).click(function() {
-		status=true;
+		status = true;
+		collision = 0;
+		$(".boundary").css("background-color", "green");
 		$('#status').text('Game started!');
 	});
 	
@@ -16,6 +18,8 @@ $(function(){
 	});
 	
 	$("div.boundary").mouseover(function(){
+		console.log("collition :(");
+		$(".boundary").css("background-color", "red");
 	    if(status) {
 	    	collision += 1;
 	    }
