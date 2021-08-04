@@ -16,5 +16,5 @@ var grow = function() {
 }
 
 var pop = function() {
-	alert("Boink.");
+	$("div").remove("div");
 }
