@@ -7,6 +7,7 @@ $(function() {
     });
 });
 
+var interval = 2000;
 let intervalId;
 let size = 0;
 function startInterval(_interval) {
