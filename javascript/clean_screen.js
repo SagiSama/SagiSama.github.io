@@ -1,6 +1,13 @@
 $(function() {
 	timer;
 	
+  	var back = ["#ff0000","blue","gray","blue","pink","orange","red","brown"];
+  	var rand = back[Math.floor(Math.random() * back.length)];
+  	$('div').css('background', rand);
+  	
+  	$('div').click(function(e) {
+    	$('div').remove(e);
+	});
 });
 
 let size = 50;
@@ -19,6 +26,3 @@ var pop = function() {
 	});
 }
 
-$('div').click(function(e) {
-    $('div').remove(e);
-});
