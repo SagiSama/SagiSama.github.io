@@ -25,24 +25,27 @@ var addBall = function() {
 	size = parseInt($('#width').val());
  	growth = parseInt($('#growth').val());
  	interval = parseInt($('#interval').val());
+ 	let number = parseInt($('#number').val());
  	
  	if((size === undefined) || (growth === undefined) || interval === undefined) {
  		alert("Please insert value");
  		return false;
  	}
 	
-	$("body").append($("<div>", {
-		"width": size+'px',
-	 	"height": size+'px',
-	 	"id": "divs",
-	 	"css": {
-	 		"background-color": generateRandomColor(),
-	 		"position": "absolute",
-	 		"left": generateRandomPosition()+'%',
-	 		"top": generateRandomPosition()+'%',
-	 		'border-radius': parseInt($('#width').val())+'px',
-	 	}
-	}));
+	for(let i=0; i<number; i++) {
+		$("body").append($("<div>", {
+			"width": size+'px',
+		 	"height": size+'px',
+		 	"id": "divs",
+		 	"css": {
+		 		"background-color": generateRandomColor(),
+		 		"position": "absolute",
+		 		"left": generateRandomPosition()+'%',
+		 		"top": generateRandomPosition()+'%',
+		 		'border-radius': parseInt($('#width').val())+'px',
+		 	}
+		}));
+	}
 	
 	clearInterval(intervalId);
   	startInterval(interval);
