@@ -5,8 +5,8 @@ $(function() {
   	var rand = back[Math.floor(Math.random() * back.length)];
   	$('div').css('background', rand);
   	
-  	$("div").remove("div", function(idx, current) {
-		$(current).remove("div");
+  	$('div').click(function(e) {
+    	$('div').remove(e);
 	});
 });
 
