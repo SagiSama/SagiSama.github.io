@@ -12,8 +12,7 @@ $(function() {
 	$("div").click(function(e){
 	   e.preventDefault();
 	   e.stopPropagation();
-	   console.log($(this)[0]);
-	   e.remove();
+	   $('div').remove($(this));
 	});
 });
 
