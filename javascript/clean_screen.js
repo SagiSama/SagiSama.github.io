@@ -9,9 +9,9 @@ $(function() {
 });
 
 var intervalId;
-function startInterval(_interval, growth) {
+function startInterval(_interval) {
   intervalId = setInterval(function() {
-    grow(growth);
+    grow();
   }, _interval);
 }
 
