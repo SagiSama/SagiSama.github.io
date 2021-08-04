@@ -2,7 +2,9 @@ $(function() {
 	$('div').click(function() { 
 		$(this).remove(); 
 	});
-	$('button').click(addBall());
+	$('button').click(function(){
+       addBall();
+    });
 });
 
 let size = 50;
