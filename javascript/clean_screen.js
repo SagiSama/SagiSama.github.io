@@ -9,4 +9,5 @@ var grow = function() {
 	console.log("called ===");
 	size += 10;
 	$("div").width(size).height(size);
+	$('div').css('border-radius', size+'px');
 }
