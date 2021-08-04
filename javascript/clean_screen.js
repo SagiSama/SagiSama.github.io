@@ -6,7 +6,7 @@ $(function() {
   	$('div').css('background', rand);
   	
   	$('div').click(function(e) {
-    	$('div').remove(e);
+    	$('div').remove('div');
 	});
 });
 
