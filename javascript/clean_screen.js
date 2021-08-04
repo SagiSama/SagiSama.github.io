@@ -12,7 +12,7 @@ $(function() {
 	$("div").click(function(e){
 	   e.preventDefault();
 	   e.stopPropagation();
-	   $('div').remove($(this));
+	   $('div').remove($(this)[0]);
 	});
 });
 
