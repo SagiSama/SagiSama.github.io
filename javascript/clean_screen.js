@@ -9,7 +9,6 @@ $(function() {
 
 var intervalId;
 function startInterval(_interval, growth) {
-	console.log("====="+_interval);
   intervalId = setInterval(function() {
     grow(growth);
   }, _interval);
@@ -17,7 +16,6 @@ function startInterval(_interval, growth) {
 
 let size = 0;
 var grow = function(s) {
-	console.log(intervalId+" "+size+"---");
 	size += s;
 	$("div").width(size).height(size);
 	$('div').css('border-radius', size+'px');
