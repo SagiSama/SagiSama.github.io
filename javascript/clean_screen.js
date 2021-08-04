@@ -18,7 +18,7 @@ function startInterval(_interval) {
 let size = 0;
 let growth = 0;
 var grow = function() {
-	size = size + growth;
+	size += growth;
 	console.log(" =-> "+size);
 	$("div").width(size).height(size).css('border-radius', size+'px');
 }
@@ -26,7 +26,7 @@ var grow = function() {
 var addBall = function() {
 	let color = generateRandomColor();
 	size = parseInt($('#width').val());
- 	let growth = parseInt($('#growth').val());
+ 	growth = parseInt($('#growth').val());
  	interval = parseInt($('#interval').val());
 	
 	$("body").append($("<div>", {
