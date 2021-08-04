@@ -34,7 +34,7 @@ var addBall = function() {
 	 	}
 	}));
 	
-	clearInterval(intervalId);
+	//clearInterval(intervalId);
   	startInterval(interval, growth);
 }
 
