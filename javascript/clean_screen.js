@@ -13,6 +13,10 @@ var grow = function() {
 	$('div').css('border-radius', size+'px');
 }
 
-var pop = $( "div" ).click(function() {
-	$( "div" ).remove( "div" );
+//var pop = $( "div" ).click(function() {
+//	$( "div" ).remove( "div" );
+//});
+
+var pop = $('div').click(function() {
+	alert("Boink."+this);
 });
