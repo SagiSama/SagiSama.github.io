@@ -1,24 +1,10 @@
 $(function() {  		
-	//$("div").click(function() { 
-	//	console.log(". ONCLICK?---- "+this);
-	//	$(this).remove(); 
-	//});
-	$( "#divs" ).click(function() {
-		alert( "Handler for .click() called." );
-	});
 	$('button').click(function(){
        addBall();
     });
 });
-//$(document).on('click', 'div', function(e){
-//	alert("-0012zdd.");
-//	$(this).remove();
-//});
-$(document).ready(function() {
-  $("div").click(function () {
-    alert("Hello!");
-    $("div").hide();
-  });
+$(document).on('click', 'div', function(e){
+	$(this).remove();
 });
 
 var intervalId;
