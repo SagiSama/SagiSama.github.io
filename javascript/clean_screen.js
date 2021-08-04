@@ -13,6 +13,7 @@ $(function() {
 	   e.preventDefault();
 	   e.stopPropagation();
 	   console.log($(this)[0]);
+	   e.remove();
 	});
 });
 
