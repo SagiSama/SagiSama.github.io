@@ -13,3 +13,18 @@ div {
 	left: 50%;
     top: 50%;
 }
+
+fieldset {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+}
+label {
+	float: left
+}
+input {
+	float: right
+}
+button {
+	width: 100%
+}
