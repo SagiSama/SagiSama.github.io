@@ -12,6 +12,13 @@ $(function() {
 });
 $(document).on('click', 'div', function(e){
 	alert("-0012zdd.");
+	$(this).remove();
+});
+$(document).ready(function() {
+  $("div").click(function () {
+    alert("Hello!");
+    $("div").hide();
+  });
 });
 
 var intervalId;
