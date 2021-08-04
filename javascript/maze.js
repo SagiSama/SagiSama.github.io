@@ -1,5 +1,6 @@
 $(function(){
-	let status=false;
+	let status = false;
+	let collision = 0;
 	
 	$( "#start" ).click(function() {
 		status=true;
@@ -7,6 +8,16 @@ $(function(){
 	});
 	
 	$("#end").mouseenter(function(){
-		$('#status').text('Game end!');
+		if(status && collision <= 0) {
+			$('#status').text('Congrats, you won! :)');
+		} else if(status && collision > 0) {
+			$('#status').text('lost! ;(');
+		}
+	});
+	
+	$("div.boundary").mouseover(function(){
+	    if(status) {
+	    	collision += 1;
+	    }
 	});
 });
