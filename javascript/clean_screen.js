@@ -19,7 +19,7 @@ let size = 0;
 var grow = function(s) {
 	size += s;
 	console.log(" =-> "+size);
-	$("div").css('border-radius', size+'px').width(size).height(size);
+	$("div").width(size).height(size).css('border-radius', size+'px');
 }
 
 var addBall = function() {
