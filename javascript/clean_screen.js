@@ -9,8 +9,9 @@ $(function() {
     //	$('div').remove(e);
 	//});
 	$('div').click(function(e) {
+		console.log(e+" ---- "+e.target);
 		if ($(e.target).is('div')) {
-			$(current).remove("div");
+			$("div").remove(e.target);
 		}
 	});
 });
