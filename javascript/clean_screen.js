@@ -5,14 +5,8 @@ $(function() {
   	var rand = back[Math.floor(Math.random() * back.length)];
   	$('div').css('background', rand);
   	
-  	//$('div').click(function(e) {
-    //	$('div').remove(e);
-	//});
-	$('div').click(function(e) {
-		console.log(e.target+" ---- "+this);
-		if ($(e.target).is('div')) {
-			$("div").remove(e.target);
-		}
+  	$("div").remove("div", function(idx, current) {
+		$(current).remove("div");
 	});
 });
 
@@ -25,10 +19,3 @@ var grow = function() {
 	$("div").width(size).height(size).removeClass('ball').addClass('ball');
 	$('div').css('border-radius', size+'px');
 }
-
-var pop = function() {
-	$("div").remove("div", function(idx, current) {
-		$(current).remove("div");
-	});
-}
-
