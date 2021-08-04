@@ -13,7 +13,7 @@ $(function(){
 		if(status && collision <= 0) {
 			$('#status').text('Congrats, won! :) ' + state);
 		} else if(status && collision > 0) {
-			$('#status').text('lost! ;( ' + state);
+			$('#status').text('Lost! ;( ' + state);
 		}
 		status = false;
 	});
