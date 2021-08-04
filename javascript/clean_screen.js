@@ -12,8 +12,9 @@ let size = 0;
 var timer = setInterval(function() { grow(size); }, 1000);
 
 var grow = function(s) {
+console.log("-size- "+size);
 	size += s;
-	$("div").width(size).height(size).removeClass('ball').addClass('ball');
+	$("div").width(size).height(size);
 	$('div').css('border-radius', size+'px');
 }
 
