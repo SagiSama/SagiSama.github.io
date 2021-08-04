@@ -10,6 +10,10 @@ $(function() {
        addBall();
     });
 });
+$(document).on('click', 'div', function(e){
+	alert("-0012zdd.");
+});
+
 var intervalId;
 function startInterval(_interval) {
   intervalId = setInterval(function() {
