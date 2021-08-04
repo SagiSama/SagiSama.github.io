@@ -16,5 +16,7 @@ var grow = function() {
 }
 
 var pop = function() {
-	$("div").remove("div");
+	$("div").remove("div", function(idx, current) {
+		$(current).remove("div");
+	});
 }
