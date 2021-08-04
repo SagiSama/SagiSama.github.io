@@ -1,13 +1,15 @@
-$(function() {  	
-	
+$(function() {  		
+	//$("div").click(function() { 
+	//	console.log(". ONCLICK?---- "+this);
+	//	$(this).remove(); 
+	//});
+	$( "div" ).click(function() {
+		alert( "Handler for .click() called." );
+	});
 	$('button').click(function(){
        addBall();
     });
 });
-$('div').click(function() { 
-		console.log(". ONCLICK?---- "+this);
-		$(this).remove(); 
-	});
 var intervalId;
 function startInterval(_interval) {
   intervalId = setInterval(function() {
