@@ -1,10 +1,9 @@
 $(function(){
 	let status=false;
 	
-	$('#start').click(function() {
-       status=true;
-       $('#status').value('game started GO!');
-    });
+	$( "#start" ).click(function() {
+	  alert( "Handler for .click() called." );
+	});
 	
 	$("#end").mouseenter(function(){
 		$('#status').text('game end!');
