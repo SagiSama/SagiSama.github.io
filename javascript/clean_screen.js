@@ -1,6 +1,7 @@
 $(function() {
 	timer;
-	pop;
+	//pop;
+	$("div").click(pop());
 });
 
 let size = 50;
@@ -17,6 +18,6 @@ var grow = function() {
 //	$( "div" ).remove( "div" );
 //});
 
-var pop = $('div').click(function() {
-	alert("Boink."+this);
-});
+var pop = function() {
+	alert("Boink.");
+}
