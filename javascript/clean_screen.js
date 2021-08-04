@@ -7,20 +7,29 @@ $(function() {
     });
 });
 
-let size = 50;
-var timer = setInterval(function() { grow(); }, 250);
+let interval = 0;
+let size = 0;
+var timer = setInterval(function() { grow(size); }, interval);
 
-var grow = function() {
-	size += 10;
+var grow = function(s) {
+	size += s;
 	$("div").width(size).height(size).removeClass('ball').addClass('ball');
 	$('div').css('border-radius', size+'px');
 }
 
 var addBall = function() {
-console.log("---- red --- added --- button --- ");
+	console.log("---- red --- added --- button --- ");
 	let color = generateRandomColor();
-	const div = $("<div>").css("background-color", color);
-	$('body').append(div);
+ 	size = $('#growth').val();
+ 	interval = $('#interval').val();
+	
+	$("body").append($("<div>", {
+		"width": $('#width').val(),
+	 	"height": $('#width').val(),
+	 	"css": {
+	 		"background-color": color
+	 	}
+	}));
 }
 
 var generateRandomColor = function() {
