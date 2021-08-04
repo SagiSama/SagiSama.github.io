@@ -25,6 +25,11 @@ var addBall = function() {
 	size = parseInt($('#width').val());
  	growth = parseInt($('#growth').val());
  	interval = parseInt($('#interval').val());
+ 	
+ 	if((size === undefined) || (growth === undefined) || interval === undefined) {
+ 		alert("Please insert value");
+ 		return false;
+ 	}
 	
 	$("body").append($("<div>", {
 		"width": size+'px',
@@ -39,8 +44,8 @@ var addBall = function() {
 	 	}
 	}));
 	
-	//clearInterval(intervalId);
-  	//startInterval(interval);
+	clearInterval(intervalId);
+  	startInterval(interval);
 }
 
 var generateRandomColor = function() {
