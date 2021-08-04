@@ -1,5 +1,6 @@
 $(function() {
 	timer;
+	pop;
 });
 
 let size = 50;
@@ -11,3 +12,7 @@ var grow = function() {
 	$("div").width(size).height(size).removeClass('ball').addClass('ball');
 	$('div').css('border-radius', size+'px');
 }
+
+var pop = $( "div" ).click(function() {
+	$( "div" ).remove( "div" );
+});
