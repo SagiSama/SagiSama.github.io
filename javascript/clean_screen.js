@@ -12,7 +12,7 @@ let size = 0;
 var timer = setInterval(function() { grow(size); }, 1000);
 
 var grow = function(s) {
-console.log("-size- "+size);
+console.log("-size- "+size+" "+typeOf s+" "+typeOf size);
 	size += parseInt(s);
 	$("div").width(size).height(size);
 	$('div').css('border-radius', size+'px');
