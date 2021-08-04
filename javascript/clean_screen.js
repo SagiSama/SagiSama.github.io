@@ -15,6 +15,7 @@ var grow = function() {
 }
 
 var addBall = function() {
+console.log("---- red --- added --- button --- ");
 	let color = generateRandomColor();
 	const div = $("<div>").css("background-color", color);
 	$('body').append(div);
