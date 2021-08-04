@@ -18,8 +18,8 @@ function startInterval(_interval, growth) {
 let size = 0;
 var grow = function(s) {
 	size += s;
-	$("div").width(size).height(size);
-	$('div').css('border-radius', size+'px');
+	console.log(" =-> "+size);
+	$("div").css('border-radius', size+'px').width(size).height(size);
 }
 
 var addBall = function() {
