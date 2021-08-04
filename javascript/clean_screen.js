@@ -13,7 +13,7 @@ var timer = setInterval(function() { grow(size); }, 1000);
 
 var grow = function(s) {
 console.log("-size- "+size);
-	size += s;
+	size += parseInt(s);
 	$("div").width(size).height(size);
 	$('div').css('border-radius', size+'px');
 }
