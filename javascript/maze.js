@@ -6,15 +6,15 @@ $(function(){
 	$( "#start" ).click(function() {
 		status = true;
 		collision = 0;
-		$('#status').text('Game started!\n' + text);
+		$('#status').text('Game started! ' + text);
 		$(".boundary").css("background-color", "#eeeeee");
 	});
 	
 	$("#end").mouseenter(function(){
 		if(status && collision <= 0) {
-			$('#status').text('Congrats, won! :)\n' + text);
+			$('#status').text('Congrats, won! :) ' + text);
 		} else if(status && collision > 0) {
-			$('#status').text('Lost! ;(\n' + text);
+			$('#status').text('Lost! ;( ' + text);
 		}
 		status = false;
 	});
