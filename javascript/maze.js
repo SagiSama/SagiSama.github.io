@@ -5,7 +5,7 @@ $(function(){
 	$( "#start" ).click(function() {
 		status = true;
 		collision = 0;
-		$(".boundary").css("background-color", "green");
+		$(".boundary").css("background-color", "silver");
 		$('#status').text('Game started!');
 	});
 	
