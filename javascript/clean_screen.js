@@ -1,5 +1,6 @@
 $(function() {  	
 	$('div').click(function() { 
+		console.log("---- "+this);
 		$(this).remove(); 
 	});
 	$('button').click(function(){
