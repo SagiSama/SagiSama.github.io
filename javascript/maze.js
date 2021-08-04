@@ -15,12 +15,12 @@ $(function(){
 		} else if(status && collision > 0) {
 			$('#status').text('lost! ;(');
 		}
+		status = false;
 	});
 	
 	$("div.boundary").mouseover(function(){
-		console.log("collition :(");
-		$(".boundary").css("background-color", "red");
 	    if(status) {
+			$(".boundary").css("background-color", "red");
 	    	collision += 1;
 	    }
 	});
