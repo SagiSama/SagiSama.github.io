@@ -23,7 +23,6 @@ app.get('/', (req, res) => {
 
 app.post('/result', (req, res) => {
 	let {name, age} = req.body;
-	console.log(name+"...name");
 	res.redirect(303, `output/?name=${name}&age=${age}`);
 });
 
