@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('fragment/header.ejs')%>
+<body>
+	<table>
+		<tr>
+			<th></th>
+			<th>Name</th>
+			<th>Price</th>
+			<th>Description</th>
+		</tr>
+		<form method=post action=addToCart>
+			<% for(let i=0; i<products.length; i++) { %>
+				<tr>
+					<td>
+						<input type="checkbox" name="prodId" value="<%= products[i].id %>">
+					</td>
+					<td><%= products[i].name %></td>
+					<td><%= products[i].price %></td>
+					<td><%= products[i].description %></td>
+				</tr>
+			<% } %>
+			<tr>
+				<input type="submit" value="Add to Card">
+			</tr>
+		</form>
+	</table>
+</body>
+</html>
