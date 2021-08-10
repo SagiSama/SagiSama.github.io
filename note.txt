@@ -1,0 +1,175 @@
+Midterm review WAP notes
+Lesson - 1
+1. Introduction to Web Programming
+  - Internet is a globally connected computer network while Web is a service that provides web pages on that network.
+  1. The internet is the global network of connected computers, while the world wide web is only one service one that network (the 
+  service that provides web pages). The internet is a network of connected computers.
+  1.1 The internet is a global computer network that uses the IP protocol to uniquely identify computers on the network. Through the 
+  TCP protocol each IP address can work with multiple services at the same time. One of these services is the HTTP protocol which is 
+  used by the World Wide Web to transport HTML pages. 
+ 2. Structure of a Page
+  - semantic elements = no outward appearance
+3. Types of Text
+  - Block vs Inline Elements
+  ● Block elements contain an entire large region of content
+  – Examples: paragraphs, lists, table cells
+  – The browser places a margin of whitespace between block elements
+  for separation, normally a newline
+  ● Inline elements affect a small amount of content
+  – Examples: bold text, code fragments, images
+  – The browser allows many inline elements to appear on the same line
+  – Must be nested inside a block element
+4. Lists and Tables
+  - <ul>
+     <li>No shoes</li>
+     <li>No shirt</li>
+    </ul>
+  ul - unordered list(*), ol - ordered list(number), li - list item
+  - Important: nested lists are inside list items. Not directly inside the other list!
+  - Definition Lists <dl> <dt> <dd>
+  <dl>
+   <dt>newbie</dt>
+   <dd>one who does not have mad skills</dd>
+   <dt>own</dt>
+   <dd>to soundly defeat</dd>
+  </dl>
+  - difinition list - dl, difinition tag - dt, difinition data - dd
+  - HTML Tables <table> <tr> <td>
+    <table>
+     <caption>My important data</caption>
+     <tr>
+     <td>1,1</td>
+     <td>1,2 okay</td>
+    </tr>
+    tr - table row, td - table data, th - table header
+   - colspan makes a cell occupy multiple columns - colspan="2"
+   - rowspan makes a cell occupy multiple rows - rowspan="3"
+ Main point:
+ 1. HTML is the basis of web programming, every web page is composed of HTML. 
+ 2. HTTP - The protocol consists of a set of commands that a computer can send to a server to request files
+      - GET: Requests a specific file or resource from the server 
+      - POST: Submits form information to the server (not idempotent) 
+      - PUT: Uploads a file to the server (.  idempotent) 
+      - HEAD: Requests information about a file from the server, but not the file’s entire contents.
+    TCP - multiplexing, guaranteed message delivery on top of IP(IP is individual computer address)
+    DNS - A set of servers that map written names to IP addresses(www.cs.miu.edu → 192.103.45.104)
+Lesson 2
+ 1. Basic CSS
+  - selector {
+     property: value; ...
+    }
+  text-align alignment of text within its element left, center, right, justify
+  text-decoration decorations such as underlining underline, overline, linethrough, blink, none
+  text-indent Indent first line a size(px, pt, %, em)
+  line-height vertical size of each line a size(px, pt, %, em)
+  letter-spacing Horizontal gap between letters a size(px, pt, %, em)
+  word-spacing Horizontal gap between words a size(px, pt, %, em)
+  text-overflow How to handle too-long text clip, ellipsis, ellipsis-word
+  text-shadow A “drop shadow” next to text Two distances(px, pt, %, em) plus an optional shadow color
+  CSS properties for text
+  h2 {
+   /* also overline, line-through, blink, or none. Effects can be combined */
+   text-decoration: underline overline;
+   /* Shadow is specified as X-offset, Y-offset, and optional color */
+   text-shadow: -2px 5px gray;
+  }
+  p {
+   /* Alignment of text within its element, left, right, center, or justify */
+   text-align: center;
+   /* Space between the lines in two paragraphs */
+   line-height: 30px;
+   /* Space between words in <p> elements should be 30 pixels */
+   word-spacing: 30px;
+   /* Indent the first line of all <p> elements with 50 pixels */
+   text-indent: 50px;
+  }
+  CSS properties for background
+  background-color color to fill background A color
+  background-image image to place in background url(image URL)
+  background-position placement of bg image within element Two tokens for x/y as top, bottom, left, right, center, or a size(pt, px, %, em)
+  background-repeat whether/how bg image should be repeated repeat(default), repeat-x, repeat-y or no-repeat
+  backgroundattachment whether bg image scrolls with page scroll(default), fixed
+  background-size scaling of bg image a size(pt, px, %, em), cover, or contain
+  background shorthand to set all background properties
+  Background
+  body {
+  /* image to place in background */
+  background-image: url("../images/draft.jpg");
+  /* How bg image should be repeated */
+  /* repeat (default), repeat-x, repeat-y, or no-repeat */
+  background-repeat: repeat-x;
+  /* placement of bg image within element. two tokens, can
+  be top, left, right, bottom, center, a percentage, or
+  a length value in px, pt, etc */
+  background-position: 370px 20px;
+  }
+  The list-style-type property
+  •none : No marker
+  •disc (default), circle, square
+  •decimal : 1, 2, 3, etc.
+  •decimal-leading-zero : 01, 02, 03, etc.
+  •lower-roman : i, ii, iii, iv, v, etc.
+  •upper-roman : I, II, III, IV, V, etc.
+  •lower-alpha : a, b, c, d, e, etc.
+  •upper-alpha : A, B, C, D, E, etc.
+  •lower-greek : alpha, beta, gamma, etc.
+  ol { list-style-type: lower-roman;}
+ 2. CSS Levels
+   - More specific styles overwrite more general styles in css levels.
+   - Styles get inherited from containing elements
+   - •It’s a good practice to reset some body values before we start coding our own CSS rules: body { margin: 0 }
+   - when two styles set conflicting values for the same property, the latter style takes precedence
+   - • Inheritance is how elements in the HTML markup inherit properties from their parent elements
+     • cascade is how different CSS rule sets are applied to HTML elements, and how conflicting rules do or don’t override each other.
+   - Style Specificity - The most specific one applies 
+   - pseudo - p:hover {color: green} // don't exist in DOM :hover not exist. // class :, element ::
+     • Style the first letter, or line, of an element
+     • ::first-line, ::first-letter
+     • Insert content (pseudo element) before, or after, the content of an element
+     • ::before, ::after
+     :active an activated or selected element
+     :focus an element that has the keyboard focus
+     :hover an element that has the mouse over it
+     :link a link that has not been visited
+     :visited a link that has already been visited
+     :nth-child(expr)
+     :first-child, :last-child targets specific children of a given element
+     :not(selector) all elements that do not match the given CSS selector
+     ::first-line the first line of text inside an element
+     ::first-letter the first letter of text inside an element
+     /* unvisited link */
+     a:link { color: #FF0000; }
+     /* visited link */
+     a:visited { color: #00FF00; }
+     /* mouse over link */
+     a:hover { color: #FF00FF; }
+     /* click on a link */
+     a:active { color: #0000FF; }
+     selector1 selector2 only in selector1
+     selector1 > selector2 direct child
+   - Cascading in CSS indicates that there are multiple levels of style sheets. More specific styles overwrite more general styles
+ 3. Styling Section - The tag provides a generic block level element that can be used for any division or section of your page. The tag 
+  provides a generic inline element for specifying any range of text inside a box. By using these tags, combined with CSS selectors we 
+  can write powerful and reusable CSS rules to style and layout pages. - We can use semantic element instead div. in html 5
+  Main point:
+   1. How a page is displayed is affected by both the HTML and the CSS 
+   2. Although every HTML tag has a default way of displaying, it can easily be changed with CSS and should never be the basis for 
+      using it. Instead use HTML tags based on meaning.
+Lesson 3
+ 1. The Box Model
+    - box-sizing: content-box; - initial and default value. The width and height properties
+      are measured including only the content, but not the padding, border or margin.
+     •box-sizing: border-box; The width and height properties include the content, the
+      padding and border, but not the margin. Note that padding and border will be inside of the box
+     border-radius: 12px;
+    - ● The box model is a description of how every element has a basic width and height, outside of which it has padding, a
+       border, and margin. For inline elements only the left and right margin and padding affect surrounding elements.
+ 2. Inline and Block
+   - img {vertical-align: baseline; }
+ 
+ dfsfsdfsdfsdf
+ 
+ 
+ 
+ 
+ 
