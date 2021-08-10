@@ -24,7 +24,6 @@ function createLoadingMesage() {
 function loadBoot() {
     $.ajax({
 	  url: "http://mumstudents.org/cs472/2016-03-AS-KL/Sections/8/bootloader/loader.php",
-	  context: document.body
 	}).done(displayBoot)
 	  .fail(ajaxFailure);
 }
@@ -35,5 +34,5 @@ console.log("dat   "+data+" "+ typeof data);
 }
 
 function ajaxFailure(xhr, status, exception) {
-  console.log("FSAILURE", xhr, status, exception);
+  console.log(xhr, status, exception);
 }
