@@ -18,9 +18,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/ask", (req, res) => {
-    console.log(req.body);
     let randomNum = Math.floor(Math.random() * answers.length)
-    console.log(answers[randomNum]);
     res.send(answers[randomNum]);
 });
 
