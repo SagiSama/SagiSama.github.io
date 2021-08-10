@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('fragment/header.ejs')%>
+<body>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Price</th>
+			<th>Quantity</th>
+		</tr>
+		<% for(let i=0; i<contents.length; i++) { %>
+			<tr>
+				<td><%= contents[i].name %></td>
+				<td><%= contents[i].price %></td>
+				<td><%= contents[i].quantity %></td>
+			</tr>
+		<% } %>
+		<tr>
+			<a href="/">Back</a>
+		</tr>
+	</table>
+</body>
+</html>
